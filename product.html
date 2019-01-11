@@ -60,7 +60,7 @@
             <!-- 主页面标题 -->
             <header class="mui-bar mui-bar-nav" id="header" style="background: #212121;">
                 <a class="mui-pull-left" id="bgImg" data-openwindow='{"url":"index.html"}'></a>
-                <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" style="color: #FFA000;"></a>
+                <a id="menu" class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" style="color: #FFA000;"></a>
                 <h1 class="mui-title" style="color: #ffffff;">百達亞洲實業有限公司</h1>
             </header>
             <div class="mui-inner-wrap">
@@ -135,7 +135,7 @@
                             <div class="mui-text-center"><a data-openwindow='{"url":"pages/home/orgList.html","id":"expertList","styles":{"titleNView":{"titleText":"专家团队"}}}'>查看更多</a></div>
                         </div>
 
-                        <div class="special border-bottom mui-content" style="margin-top: 15px; background: rgba(0,0,0,.3);padding: 10px 0 10px 0">
+                        <div class="footer border-bottom mui-content" style="margin-top: 15px; background: rgba(0,0,0,.3);padding: 10px 0 10px 0">
                             <div class="mui-row">
                                 <div class="navigation mui-col-sm-6 mui-col-xs-12">
                                     <h4 class="font-normal block-title" style="color: #fff; text-align: left">導航</h4>
@@ -163,11 +163,11 @@
         </div>
 
         <nav class="mui-bar mui-bar-tab " id="nav">
-            <a class="mui-tab-item" id="a1">
+            <a class="mui-tab-item" id="a1" data-openwindow='{"url":"index.html"}'>
                 <span class="mui-icon mui-icon-home"></span>
                 <span class="mui-tab-label">主頁</span>
             </a>
-            <a class="mui-tab-item mui-active" id="a2" data-openwindow='{"url":"product.html"}'>
+            <a class="mui-tab-item mui-active" id="a2">
                 <span class="mui-icon iconfont mui-icon-mall"></span>
                 <span class="mui-tab-label">商品</span>
             </a>
@@ -175,7 +175,7 @@
                 <span class="mui-icon mui-icon-phone"></span>
                 <span class="mui-tab-label">電話</span>
             </a>
-			<a class="mui-tab-item " id="a4" data-openwindow='{"url":"aboutUs.html#"}'>
+			<a class="mui-tab-item " id="a4" data-openwindow='{"url":"contactUs.html#"}'>
 				<span class="mui-icon mui-icon-email"></span>
 				<span class="mui-tab-label">郵箱</span>
 			</a>
@@ -191,6 +191,10 @@
                 interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
             });
             mui('.mui-scroll-wrapper').scroll();
+
+            document.querySelector('#menu').addEventListener('tap',function () {
+                mui('.mui-off-canvas-wrap').offCanvas('show');
+            });
 //			mui.plusReady(function() {
 //				var tabBarControl = new TabBarControl();
 //				mui('.mui-scroll-wrapper').scroll();
