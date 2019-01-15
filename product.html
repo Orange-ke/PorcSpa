@@ -232,7 +232,7 @@
                 $("#show").fadeIn();
             });
 
-            document.querySelector('.forOperation').addEventListener('tap', function() {
+            $('.forOperation').click(function() {
                 var self = $(this);
                 var operater = self.attr("sign");
                 var oldOperater = $("label.active").attr("sign") || "";
