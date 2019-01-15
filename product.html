@@ -11,7 +11,7 @@
             #nav {background: #212121;}
             #header {box-shadow: 1px 3px 3px #212121; background: #212121;}
             aside ul li {border-bottom: 2px solid #FFA000; background: #212121; color: #fff; text-align: center;}
-            .specialList ul li .mui-card {box-shadow: 1px 3px 3px #212121; background: #212121; color: #fff;}
+            .categoryList ul li {border-bottom: 1px solid #ddd;text-shadow: 1px 1px 0 rgba(255, 255, 255, .7);color: #FFA000;}
             #bgImg {display: inline-block; height: 50px; width: 50px; background-image: url('images/header.png');background-size: cover; background-position: center;}
 			.mui-bar-transparent input{background: rgba(220,220,220,0.7);}
 			.mui-slider .mui-slider-group .mui-slider-item{max-height: 150px;height: 150px;}
@@ -51,7 +51,7 @@
             <input type="radio" name="cube-controller" id="show-left">
             <input type="radio" name="cube-controller" id="show-right">
             <div class="cube-wrap">
-                <div class="cube">
+                <div class="cube goFront">
                     <div class="cube-face cube-face-front" data-name="imgFront"></div>
                     <div class="cube-face cube-face-back" data-name="imgBack"></div>
                     <div class="cube-face cube-face-top" data-name="imgTop"></div>
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="button-wrap">
-                <label class="forOperation for-front" sign="goFront" for="show-front">前</label>
+                <label class="forOperation for-front active" sign="goFront" for="show-front">前</label>
                 <label class="forOperation for-back" sign="goBack" for="show-back">后</label>
                 <label class="forOperation for-top" sign="goTop" for="show-top">上</label>
                 <label class="forOperation for-bottom" sign="goBottom" for="show-bottom">下</label>
@@ -76,10 +76,10 @@
                 <div class="mui-scroll-wrapper">
                     <div class="mui-scroll">
                         <ul class="mui-table-view">
-                            <li class="mui-table-view-cell">主頁</li>
-                            <li class="mui-table-view-cell">產品</li>
-                            <li class="mui-table-view-cell">關於我們</li>
-                            <li class="mui-table-view-cell">聯繫我們</li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html#"}'>主頁</a></li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#"}'>產品</a></li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html#"}'>關於我們</a></li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html#"}'>聯繫我們</a></li>
                         </ul>
                     </div>
                 </div>
@@ -101,52 +101,52 @@
 
                         <div class="special border-bottom">
                             <h4 class="font-normal block-title" style="margin-top: 15px; background: rgba(0,0,0,.3);padding: 10px 0 10px 0">餐具分類</h4>
-                            <div class="mui-row specialList">
+                            <div class="mui-row categoryList">
                                 <ul class="mui-table-view" style="background: transparent;">
                                     <li class="mui-table-view-cell category" data-name="category1">
-                                        分类1
+                                        自助餐餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                     <li class="mui-table-view-cell category" data-name="category2">
-                                        分类1
+                                        陶瓷餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                     <li class="mui-table-view-cell category" data-name="category3">
-                                        分类1
+                                        不鏽鋼餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                     <li class="mui-table-view-cell category" data-name="category4">
-                                        分类1
+                                        廚房用具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                     <li class="mui-table-view-cell category" data-name="category5">
-                                        分类1
+                                        廚師服和紡織品<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                     <li class="mui-table-view-cell category" data-name="category6">
-                                        分类1
+                                        筷子和筷架<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                     <li class="mui-table-view-cell category" data-name="category7">
-                                        分类1
+                                        餐車和垃圾桶<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                     <li class="mui-table-view-cell category" data-name="category8">
-                                        分类1
+                                        玻璃餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                     <li class="mui-table-view-cell category" data-name="category9">
-                                        分类1
+                                        色釉餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                     <li class="mui-table-view-cell category" data-name="category10">
-                                        分类1
+                                        日式餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                     <li class="mui-table-view-cell category" data-name="category11">
-                                        分类1
+                                        科學瓷餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                     <li class="mui-table-view-cell category" data-name="category12">
-                                        分类1
+                                        系列<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                     <li class="mui-table-view-cell category" data-name="category13">
-                                        分类1
+                                        木質餐具和創意餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                     <li class="mui-table-view-cell category" data-name="category14">
-                                        分类1
+                                        餐桌餐椅<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                     <li class="mui-table-view-cell category" data-name="category15">
-                                        分类1
+                                        其他<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
                                     </li>
                                 </ul>
                             </div>
@@ -158,10 +158,10 @@
                                 <div class="navigation mui-col-sm-6 mui-col-xs-12">
                                     <h4 class="font-normal block-title" style="color: #fff; text-align: left">導航</h4>
                                     <ul class="mui-table-view" style="color: #fff;">
-                                        <li class="mui-table-view-cell">主頁</li>
-                                        <li class="mui-table-view-cell">產品</li>
-                                        <li class="mui-table-view-cell">關於我們</li>
-                                        <li class="mui-table-view-cell">聯繫我們</li>
+                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html#"}'>主頁</a></li>
+                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#"}'>產品</a></li>
+                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html#"}'>關於我們</a></li>
+                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html#"}'>聯繫我們</a></li>
                                     </ul>
                                 </div>
                                 <div class="aboutUs mui-col-sm-6 mui-col-xs-12">
@@ -231,6 +231,10 @@
                                 "background-image": "url('" + imgData[value] + "')"
                             })
                         }
+                        var oldOperater = $("label.active").attr("sign") || "";
+                        $(".forOperation").removeClass("active");
+                        $(".for-front").addClass("active");
+                        $(".cube").removeClass(oldOperater).addClass("goFront");
                         $("#show").fadeIn();
                     });
                 });

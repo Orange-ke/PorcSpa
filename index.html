@@ -12,6 +12,7 @@
             aside ul li {border-bottom: 2px solid #FFA000; background: #212121; color: #fff; text-align: center;}
             .specialList ul li .mui-card {box-shadow: 1px 3px 3px #212121; background: #212121; color: #fff;}
             #bgImg {display: inline-block; height: 50px; width: 50px; background-image: url('images/header.png');background-size: cover; background-position: center;}
+            .mui-table-view-cell:after {height: 0;}
 			.mui-bar-transparent input{background: rgba(220,220,220,0.7);}
 			.mui-slider .mui-slider-group .mui-slider-item{max-height: 150px;height: 150px;}
 			.mui-slider .mui-slider-group .mui-slider-item img{height: 100%;}
@@ -49,10 +50,10 @@
                 <div class="mui-scroll-wrapper">
                     <div class="mui-scroll">
                         <ul class="mui-table-view">
-                            <li class="mui-table-view-cell">主頁</li>
-                            <li class="mui-table-view-cell">產品</li>
-                            <li class="mui-table-view-cell">關於我們</li>
-                            <li class="mui-table-view-cell">聯繫我們</li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html#"}'>主頁</a></li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#"}'>產品</a></li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html#"}'>關於我們</a></li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html#"}'>聯繫我們</a></li>
                         </ul>
                     </div>
                 </div>
@@ -140,10 +141,10 @@
                                 <div class="navigation mui-col-sm-6 mui-col-xs-12">
                                     <h4 class="font-normal block-title" style="color: #fff; text-align: left">導航</h4>
                                     <ul class="mui-table-view" style="color: #fff;">
-                                        <li class="mui-table-view-cell">主頁</li>
-                                        <li class="mui-table-view-cell">產品</li>
-                                        <li class="mui-table-view-cell">關於我們</li>
-                                        <li class="mui-table-view-cell">聯繫我們</li>
+                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html#"}'>主頁</a></li>
+                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#"}'>產品</a></li>
+                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html#"}'>關於我們</a></li>
+                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html#"}'>聯繫我們</a></li>
                                     </ul>
                                 </div>
                                 <div class="aboutUs mui-col-sm-6 mui-col-xs-12">
@@ -172,12 +173,12 @@
                 <span class="mui-tab-label">商品</span>
             </a>
             <a class="mui-tab-item " id="a3" data-openwindow='{"url":"aboutUs.html"}'>
-                <span class="mui-icon mui-icon-phone"></span>
-                <span class="mui-tab-label">電話</span>
+                <span class="mui-icon mui-icon-chat"></span>
+                <span class="mui-tab-label">關於我們</span>
             </a>
 			<a class="mui-tab-item " id="a4" data-openwindow='{"url":"contactUs.html#"}'>
-				<span class="mui-icon mui-icon-email"></span>
-				<span class="mui-tab-label">郵箱</span>
+				<span class="mui-icon mui-icon-location"></span>
+				<span class="mui-tab-label">聯繫我們</span>
 			</a>
         </nav>
 

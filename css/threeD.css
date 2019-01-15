@@ -42,27 +42,14 @@
     width: 80vw;
     height: 80vw;
     position: relative;
-    background-color: #eb4c89;
-    outline: 1px solid rgba(0,0,0,.1);
+    background-color: #fff;
+    outline: 1px solid rgba(0,0,0,.6);
     outline-offset: -1px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.cube-face i{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    margin: auto;
-    color: #fff;
-    font-size: 36px;
-    text-align: center;
-    line-height: 40px;
-}
+
 .cube-face-top{
     position: absolute;
     top: -80vw;
@@ -97,7 +84,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,.1);
 }
 .cube-face-front{
     position: absolute;
@@ -150,7 +137,7 @@ input{
     height: 50px;
     margin: 0;
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     line-height: 52px;
     text-align: center;
@@ -170,5 +157,5 @@ input{
 .button-wrap .for-bottom.active,
 .button-wrap .for-zoom-cube.active{
     background-color: #fff;
-    color: #eb4c89;
+    color: #FFA000;
 }
