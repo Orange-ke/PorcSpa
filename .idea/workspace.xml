@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e0a7bf9c-93d7-4905-b713-047406f7d091" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutUs.html" afterPath="$PROJECT_DIR$/aboutUs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contactUs.html" afterPath="$PROJECT_DIR$/contactUs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/threeD.css" afterPath="$PROJECT_DIR$/css/threeD.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.html" afterPath="$PROJECT_DIR$/product.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -331,7 +326,7 @@
       <updated>1546943942308</updated>
       <workItem from="1546943944723" duration="4292000" />
       <workItem from="1547126992429" duration="701000" />
-      <workItem from="1547127975646" duration="44619000" />
+      <workItem from="1547127975646" duration="44633000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <created>1546945503119</created>
@@ -424,11 +419,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547548321026</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="setup">
+      <created>1547551015973</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1547551015973</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49612000" />
+    <option name="totallyTimeSpent" value="49626000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
