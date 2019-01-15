@@ -217,7 +217,7 @@
 
             var mask = mui.createMask();//callback为用户点击蒙版时自动执行的回调；
 
-            $(".category").click(function() {
+            document.querySelector('.category').addEventListener('tap', function() {
                 var categoryName = $(this).attr("data-name");
                 mask.show();
                 $.getJSON( "json/" + categoryName + ".json", function( data ) {
@@ -232,7 +232,7 @@
                 $("#show").fadeIn();
             });
 
-            $(".forOperation").click(function() {
+            document.querySelector('.forOperation').addEventListener('tap', function() {
                 var self = $(this);
                 var operater = self.attr("sign");
                 var oldOperater = $("label.active").attr("sign") || "";
@@ -241,7 +241,7 @@
                 $(".cube").removeClass(oldOperater).addClass(operater);
             });
 
-            $("#showClose").click(function() {
+            document.querySelector('#showClose').addEventListener('tap',function() {
                 $("#show").fadeOut();
                 mask.close();
             });

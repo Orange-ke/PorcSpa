@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0a7bf9c-93d7-4905-b713-047406f7d091" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/1/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/1/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/1/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/1/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/1/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/1/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/threeD.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category10.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category11.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category12.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category13.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category14.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category15.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category4.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category5.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category6.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category7.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category8.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/category9.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contactUs.html" afterPath="$PROJECT_DIR$/contactUs.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.html" afterPath="$PROJECT_DIR$/product.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -70,8 +47,8 @@
       <file leaf-file-name="product.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="992">
-              <caret line="148" column="43" lean-forward="true" selection-start-line="148" selection-start-column="43" selection-end-line="148" selection-end-column="43" />
+            <state relative-caret-position="474">
+              <caret line="245" column="29" lean-forward="true" selection-start-line="245" selection-start-column="29" selection-end-line="245" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -334,7 +311,7 @@
       <updated>1546943942308</updated>
       <workItem from="1546943944723" duration="4292000" />
       <workItem from="1547126992429" duration="701000" />
-      <workItem from="1547127975646" duration="38677000" />
+      <workItem from="1547127975646" duration="39160000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <created>1546945503119</created>
@@ -399,11 +376,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547229434987</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="setup">
+      <created>1547545065329</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1547545065329</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43670000" />
+    <option name="totallyTimeSpent" value="44153000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -648,8 +632,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="992">
-          <caret line="148" column="43" lean-forward="true" selection-start-line="148" selection-start-column="43" selection-end-line="148" selection-end-column="43" />
+        <state relative-caret-position="474">
+          <caret line="245" column="29" lean-forward="true" selection-start-line="245" selection-start-column="29" selection-end-line="245" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
