@@ -217,19 +217,24 @@
 
             var mask = mui.createMask();//callback为用户点击蒙版时自动执行的回调；
 
-            document.querySelector('.category').addEventListener('tap', function() {
-                var categoryName = $(this).attr("data-name");
-                mask.show();
-                $.getJSON( "json/" + categoryName + ".json", function( data ) {
-                    console.log(data.imgList.imgFront);
-                    var imgData = data.imgList;
-                    for (var value in imgData) {
-                        $(".cube-face[data-name=" + value +"]").css({
-                            "background-image": "url('" + imgData[value] + "')"
-                        })
-                    }
+            document.querySelectorAll('.category').forEach(function (e,i) {
+
+                e.addEventListener('tap', function() {
+                    var categoryName = e.getAttribute("data-name");
+                    console.log(categoryName);
+                    mask.show();
+                    $.getJSON( "json/" + categoryName + ".json", function( data ) {
+                        console.log(data.imgList.imgFront);
+                        var imgData = data.imgList;
+                        for (var value in imgData) {
+                            $(".cube-face[data-name=" + value +"]").css({
+                                "background-image": "url('" + imgData[value] + "')"
+                            })
+                        }
+                        $("#show").fadeIn();
+                    });
                 });
-                $("#show").fadeIn();
+
             });
 
             $('.forOperation').click(function() {

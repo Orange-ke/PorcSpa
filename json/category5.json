@@ -1,11 +1,11 @@
 {
 	"imgList":
 	{
-		"imgFront": "",
-		"imgBack": "",
-		"imgTop": "",
-		"imgLeft": "",
-		"imgRight": "",
-		"imgBottom": "",
+		"imgFront": "img/5/1.jpg",
+		"imgBack": "img/5/2.jpg",
+		"imgTop": "img/5/3.jpg",
+		"imgLeft": "img/5/4.jpg",
+		"imgRight": "img/5/5.jpg",
+		"imgBottom": "img/5/6.jpg"
 	}
 }
