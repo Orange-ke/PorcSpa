@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>首页</title>
 		<link href="css/mui.css" rel="stylesheet" />
+        <link href="css/threeD.css" rel="stylesheet" />
 		<style type="text/css">
             #nav {background: #212121;}
             #header {box-shadow: 1px 3px 3px #212121; background: #212121;}
@@ -19,18 +20,18 @@
 			.mui-grid-view.mui-grid-9 .mui-table-view-cell{padding: 0;font-size: 12px;border-color: #DBDBDB;}
 			.mui-ios .mui-grid-view.mui-grid-9 .mui-table-view-cell{border-width: 0.5px;}
 			.mui-grid-view.mui-grid-9 .mui-table-view-cell span{color: #FE3C3D;font-weight: bold;}
-			
+
 			.block-title{text-align: center;margin: 10px 0;}
 			.mui-row,.mui-row > div{padding: 0 5px;}
 			.recommend .mui-col-xs-6 .img{overflow: hidden;position: relative;}
 			.recommend .mui-col-xs-6 .img:before{content: '';display: block;margin-top: 75%;}
 			.recommend .mui-col-xs-6 img{width: 100%;height: 100%;position: absolute;top: 0px;}
 			.recommend .mui-col-xs-6 h6{margin: 8px 0;text-align: center;}
-			
+
 			.mechanism .mui-col-xs-4 .img{overflow: hidden;position: relative;margin-bottom: 10px;}
 			.mechanism .mui-col-xs-4 .img:before{content: '';display: block;margin-top: 40%;}
 			.mechanism .mui-col-xs-4 img{width: 100%;height: 100%;position: absolute;top: 0px;}
-			
+
 			.expert .expert-top .img{width: 50px;height: 50px;border-radius: 50%;overflow: hidden;border: #DBDBDB 1px solid;float: left;margin-right: 5px;}
 			.expert .expert-top .img img{width: 100%;height: auto;}
 			.expert .expert-top h6{padding-top: 10px;}
@@ -41,7 +42,33 @@
 	</head>
 
     <body>
-
+        <div hidden id="show" style="width: 100%;z-index: 999; background: #dca7a7; position: absolute; height: 65vh; top: 15vh;">
+            <span id="showClose" class="mui-icon mui-icon-closeempty" style="width: 50px; height: 50px;color: #FFA000; display: inline-block; position: absolute;right: 5px; top: -50px; font-size: 50px; background: rgba(255,255,255,.5);border-radius: 50px;"></span>
+            <input type="radio" name="cube-controller" id="show-front" checked>
+            <input type="radio" name="cube-controller" id="show-back">
+            <input type="radio" name="cube-controller" id="show-top">
+            <input type="radio" name="cube-controller" id="show-bottom">
+            <input type="radio" name="cube-controller" id="show-left">
+            <input type="radio" name="cube-controller" id="show-right">
+            <div class="cube-wrap">
+                <div class="cube">
+                    <div class="cube-face cube-face-front" data-name="imgFront"></div>
+                    <div class="cube-face cube-face-back" data-name="imgBack"></div>
+                    <div class="cube-face cube-face-top" data-name="imgTop"></div>
+                    <div class="cube-face cube-face-left" data-name="imgLeft"></div>
+                    <div class="cube-face cube-face-right" data-name="imgRight"></div>
+                    <div class="cube-face cube-face-bottom" data-name="imgBottom"></div>
+                </div>
+            </div>
+            <div class="button-wrap">
+                <label class="forOperation for-front" sign="goFront" for="show-front">前</label>
+                <label class="forOperation for-back" sign="goBack" for="show-back">后</label>
+                <label class="forOperation for-top" sign="goTop" for="show-top">上</label>
+                <label class="forOperation for-bottom" sign="goBottom" for="show-bottom">下</label>
+                <label class="forOperation for-left" sign="goLeft" for="show-left">左</label>
+                <label class="forOperation for-right" sign="goRight" for="show-right">右</label>
+            </div>
+        </div>
         <!-- 侧滑导航根容器 -->
         <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
             <!-- 菜单容器 -->
@@ -71,64 +98,55 @@
                 <!--</header>-->
                 <div class="mui-content mui-scroll-wrapper" style="bottom: 50px;top: 50px;">
                     <div class="mui-scroll" style="background: url('images/bg.jpg') repeat;">
-                        <!-- 主界面具体展示内容 -->
-                        <div class="mui-slider">
-                            <div class="mui-slider-group mui-slider-loop">
-                                <div class="mui-slider-item mui-slider-item-duplicate"><img src="images/3.jpg" /></div>
-                                <div class="mui-slider-item"><img src="images/1.jpg" /></div>
-                                <div class="mui-slider-item"><img src="images/2.jpg" /></div>
-                                <div class="mui-slider-item"><img src="images/3.jpg" /></div>
-                                <div class="mui-slider-item mui-slider-item-duplicate"><img src="images/1.jpg" /></div>
-                            </div>
-                            <div class="mui-slider-indicator">
-                                <div class="mui-indicator mui-active"></div>
-                                <div class="mui-indicator"></div>
-                                <div class="mui-indicator"></div>
-                            </div>
-                        </div>
 
                         <div class="special border-bottom">
-                            <h4 class="font-normal block-title" style="margin-top: 15px; background: rgba(0,0,0,.3);padding: 10px 0 10px 0">特色餐具</h4>
+                            <h4 class="font-normal block-title" style="margin-top: 15px; background: rgba(0,0,0,.3);padding: 10px 0 10px 0">餐具分類</h4>
                             <div class="mui-row specialList">
                                 <ul class="mui-table-view" style="background: transparent;">
-                                    <li class="mui-table-view-cell">
-                                        <div class="mui-card">
-                                            <!--页眉，放置标题-->
-                                            <div class="mui-card-header">
-                                                <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
-                                                <span>特色1</span>
-                                            </div>
-                                            <!--内容区-->
-                                            <div class="mui-card-content">
-                                                <img src="images/sp1.jpg" alt width="100%">
-                                            </div>
-                                        </div>
+                                    <li class="mui-table-view-cell category" data-name="category1">
+                                        分类1
                                     </li>
-                                    <li class="mui-table-view-cell">
-                                        <div class="mui-card">
-                                            <!--页眉，放置标题-->
-                                            <div class="mui-card-header">
-                                                <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
-                                                <span>特色2</span>
-                                            </div>
-                                            <!--内容区-->
-                                            <div class="mui-card-content">
-                                                <img src="images/sp2.jpg" alt width="100%">
-                                            </div>
-                                        </div>
+                                    <li class="mui-table-view-cell category" data-name="category2">
+                                        分类1
                                     </li>
-                                    <li class="mui-table-view-cell">
-                                        <div class="mui-card">
-                                            <!--页眉，放置标题-->
-                                            <div class="mui-card-header">
-                                                <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
-                                                <span>特色3</span>
-                                            </div>
-                                            <!--内容区-->
-                                            <div class="mui-card-content">
-                                                <img src="images/sp3.jpg" alt width="100%">
-                                            </div>
-                                        </div>
+                                    <li class="mui-table-view-cell category" data-name="category3">
+                                        分类1
+                                    </li>
+                                    <li class="mui-table-view-cell category" data-name="category4">
+                                        分类1
+                                    </li>
+                                    <li class="mui-table-view-cell category" data-name="category5">
+                                        分类1
+                                    </li>
+                                    <li class="mui-table-view-cell category" data-name="category6">
+                                        分类1
+                                    </li>
+                                    <li class="mui-table-view-cell category" data-name="category7">
+                                        分类1
+                                    </li>
+                                    <li class="mui-table-view-cell category" data-name="category8">
+                                        分类1
+                                    </li>
+                                    <li class="mui-table-view-cell category" data-name="category9">
+                                        分类1
+                                    </li>
+                                    <li class="mui-table-view-cell category" data-name="category10">
+                                        分类1
+                                    </li>
+                                    <li class="mui-table-view-cell category" data-name="category11">
+                                        分类1
+                                    </li>
+                                    <li class="mui-table-view-cell category" data-name="category12">
+                                        分类1
+                                    </li>
+                                    <li class="mui-table-view-cell category" data-name="category13">
+                                        分类1
+                                    </li>
+                                    <li class="mui-table-view-cell category" data-name="category14">
+                                        分类1
+                                    </li>
+                                    <li class="mui-table-view-cell category" data-name="category15">
+                                        分类1
                                     </li>
                                 </ul>
                             </div>
@@ -185,6 +203,7 @@
 		<script src="js/util.js"></script>
         <script src="js/main.js"></script>
 		<script src="js/token.js"></script>
+        <script src="js/jquery-3.2.1.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			mui.init();
             mui('.mui-slider').slider({
@@ -195,11 +214,38 @@
             document.querySelector('#menu').addEventListener('tap',function () {
                 mui('.mui-off-canvas-wrap').offCanvas('show');
             });
-//			mui.plusReady(function() {
-//				var tabBarControl = new TabBarControl();
-//				mui('.mui-scroll-wrapper').scroll();
-//				mui('.mui-slider').slider({interval:3000});
-//			});
+
+            var mask = mui.createMask();//callback为用户点击蒙版时自动执行的回调；
+
+            $(".category").click(function() {
+                var categoryName = $(this).attr("data-name");
+                mask.show();
+                $.getJSON( "json/" + categoryName + ".json", function( data ) {
+                    console.log(data.imgList.imgFront);
+                    var imgData = data.imgList;
+                    for (var value in imgData) {
+                        $(".cube-face[data-name=" + value +"]").css({
+                            "background-image": "url('" + imgData[value] + "')"
+                        })
+                    }
+                });
+                $("#show").fadeIn();
+            });
+
+            $(".forOperation").click(function() {
+                var self = $(this);
+                var operater = self.attr("sign");
+                var oldOperater = $("label.active").attr("sign") || "";
+                $(".forOperation").removeClass("active");
+                self.addClass("active");
+                $(".cube").removeClass(oldOperater).addClass(operater);
+            });
+
+            $("#showClose").click(function() {
+                $("#show").fadeOut();
+                mask.close();
+            });
+
 		</script>
 	</body>
 
