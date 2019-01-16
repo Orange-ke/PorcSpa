@@ -50,10 +50,10 @@
                 <div class="mui-scroll-wrapper">
                     <div class="mui-scroll">
                         <ul class="mui-table-view">
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html#"}'>主頁</a></li>
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#"}'>產品</a></li>
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html#"}'>關於我們</a></li>
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html#"}'>聯繫我們</a></li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html"}'>主頁</a></li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html"}'>產品</a></li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html"}'>關於我們</a></li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html"}'>聯繫我們</a></li>
                         </ul>
                     </div>
                 </div>
@@ -139,8 +139,12 @@
                 mui('.mui-off-canvas-wrap').offCanvas('show');
             });
 
-            mui('body').on('tap','#a3 #a4',function(){
+            mui('body').on('tap','#a3',function(){
                 window.top.location.href=this.href;
+            });
+
+            mui('#nav').on('tap','#a4',function(){
+                mui.alert('info@paktatasia.com','郵箱','我知道了',null,'div');
             });
 
 //			mui.plusReady(function() {

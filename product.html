@@ -12,7 +12,8 @@
             #nav {background: #212121;}
             #header {box-shadow: 1px 3px 3px #212121; background: #212121;}
             aside ul li {border-bottom: 2px solid #FFA000; background: #212121; color: #fff; text-align: center;}
-            .categoryList ul li {border-bottom: 1px solid #ddd;text-shadow: 1px 1px 0 rgba(255, 255, 255, .7);color: #FFA000;}
+            .categoryList ul li {border-bottom: 1px solid #ddd;text-shadow: 1px 1px 0 rgba(255, 255, 255, .7);}
+            .categoryList ul li a {color: #FFA000; display: block;}
             #bgImg {display: inline-block; height: 50px; width: 50px; background-image: url('images/header.png');background-size: cover; background-position: center;}
 			.mui-bar-transparent input{background: rgba(220,220,220,0.7);}
 			.mui-slider .mui-slider-group .mui-slider-item{max-height: 150px;height: 150px;}
@@ -77,10 +78,10 @@
                 <div class="mui-scroll-wrapper">
                     <div class="mui-scroll">
                         <ul class="mui-table-view">
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html#"}'>主頁</a></li>
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#"}'>產品</a></li>
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html#"}'>關於我們</a></li>
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html#"}'>聯繫我們</a></li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html"}'>主頁</a></li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html"}'>產品</a></li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html"}'>關於我們</a></li>
+                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html"}'>聯繫我們</a></li>
                         </ul>
                     </div>
                 </div>
@@ -104,54 +105,54 @@
                             <h4 class="font-normal block-title" style="margin-top: 15px; background: rgba(0,0,0,.3);padding: 10px 0 10px 0">餐具分類</h4>
                             <div class="mui-row categoryList">
                                 <ul class="mui-table-view" style="background: transparent;">
-                                    <li class="mui-table-view-cell category" data-name="category1" id="category1">
-                                        自助餐餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category" id="category1">
+                                        <a data-name="category1" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">自助餐餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
-                                    <li class="mui-table-view-cell category" data-name="category2" id="category2">
-                                        陶瓷餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category" id="category2">
+                                        <a data-name="category2" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">陶瓷餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
-                                    <li class="mui-table-view-cell category" data-name="category3" id="category3">
-                                        不鏽鋼餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category" id="category3">
+                                        <a data-name="category3" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">不鏽鋼餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
-                                    <li class="mui-table-view-cell category" data-name="category4">
-                                        廚房用具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category">
+                                        <a data-name="category4" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">廚房用具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
-                                    <li class="mui-table-view-cell category" data-name="category5">
-                                        廚師服和紡織品<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category">
+                                        <a data-name="category5" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">廚師服和紡織品<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
-                                    <li class="mui-table-view-cell category" data-name="category6">
-                                        筷子和筷架<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category">
+                                        <a data-name="category6" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">筷子和筷架<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
-                                    <li class="mui-table-view-cell category" data-name="category7">
-                                        餐車和垃圾桶<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category">
+                                        <a data-name="category7" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">餐車和垃圾桶<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
-                                    <li class="mui-table-view-cell category" data-name="category8">
-                                        玻璃餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category">
+                                        <a data-name="category8" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">玻璃餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
-                                    <li class="mui-table-view-cell category" data-name="category9">
-                                        色釉餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category">
+                                        <a data-name="category9" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">色釉餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
-                                    <li class="mui-table-view-cell category" data-name="category10">
-                                        日式餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category">
+                                        <a data-name="category10" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">日式餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
-                                    <li class="mui-table-view-cell category" data-name="category11">
-                                        科學瓷餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category">
+                                        <a data-name="category11" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">科學瓷餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
-                                    <li class="mui-table-view-cell category" data-name="category12">
-                                        系列<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category">
+                                        <a data-name="category12" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">系列<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
-                                    <li class="mui-table-view-cell category" data-name="category13">
-                                        木質餐具和創意餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category">
+                                        <a data-name="category13" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">木質餐具和創意餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
-                                    <li class="mui-table-view-cell category" data-name="category14">
-                                        餐桌餐椅<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category">
+                                        <a data-name="category14" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">餐桌餐椅<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
-                                    <li class="mui-table-view-cell category" data-name="category15">
-                                        其他<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span>
+                                    <li class="mui-table-view-cell category">
+                                        <a data-name="category15" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">其他<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="mui-text-center"><a data-openwindow='{"url":"pages/home/orgList.html","id":"expertList","styles":{"titleNView":{"titleText":"专家团队"}}}'>查看更多</a></div>
+                            <div class="mui-text-center"><p>查看更多信息請移步PC端登陸 <a target="_blank" data-openwindow='{"url":"http://www.paktatasia.com"}'> www.paktatasia.com</a></p></div>
                         </div>
 
                         <div class="footer border-bottom mui-content" style="margin-top: 15px; background: rgba(0,0,0,.3);padding: 10px 0 10px 0">
@@ -217,31 +218,11 @@
                 mui('.mui-off-canvas-wrap').offCanvas('show');
             });
 
-            var mask = mui.createMask();//callback为用户点击蒙版时自动执行的回调；
+            var mask = mui.createMask(callback);//callback为用户点击蒙版时自动执行的回调；
 
-            document.querySelectorAll('.category').forEach(function (e,i) {
-
-                e.addEventListener('tap', function() {
-                    var categoryName = e.getAttribute("data-name");
-                    console.log(categoryName);
-                    mask.show();
-                    $.getJSON( "json/" + categoryName + ".json", function( data ) {
-                        console.log(data.imgList.imgFront);
-                        var imgData = data.imgList;
-                        for (var value in imgData) {
-                            $(".cube-face[data-name=" + value +"]").css({
-                                "background-image": "url('" + imgData[value] + "')"
-                            })
-                        }
-                        var oldOperater = $("label.active").attr("sign") || "";
-                        $(".forOperation").removeClass("active");
-                        $(".for-front").addClass("active");
-                        $(".cube").removeClass(oldOperater).addClass("goFront");
-                        $("#show").fadeIn();
-                    });
-                });
-
-            });
+            function callback() {
+                $("#show").fadeOut();
+            }
 
             $('.forOperation').click(function() {
                 var self = $(this);
@@ -257,8 +238,34 @@
                 mask.close();
             });
 
-            mui('body').on('tap','#a3 #a4',function(){
+            mui('body').on('tap','#a3',function(){
                 window.top.location.href=this.href;
+            });
+
+            mui('#nav').on('tap','#a4',function(){
+                mui.alert('info@paktatasia.com','郵箱','我知道了',null,'div');
+            });
+
+            mui(document.body).on('tap', '.mui-btn', function(e) {
+                var self = mui(this);
+                self.button('loading');
+                var categoryName = self[0].getAttribute("data-name");
+                mask.show();
+                console.log(mui(".mui-backdrop"));
+                $.getJSON( "json/" + categoryName + ".json", function( data ) {
+                    var imgData = data.imgList;
+                    self.button('reset');
+                    for (var value in imgData) {
+                        $(".cube-face[data-name=" + value +"]").css({
+                            "background-image": "url('" + imgData[value] + "')"
+                        })
+                    }
+                    var oldOperater = $("label.active").attr("sign") || "";
+                    $(".forOperation").removeClass("active");
+                    $(".for-front").addClass("active");
+                    $(".cube").removeClass(oldOperater).addClass("goFront");
+                    $("#show").fadeIn();
+                });
             });
 
 		</script>
