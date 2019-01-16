@@ -69,14 +69,14 @@
                     <div class="mui-scroll" style="background: url('images/bg.jpg') repeat;">
                         <!-- 主界面具体展示内容 -->
                         <div class="contactInfo border-bottom">
-                            <h4 class="font-normal block-title" style="margin-top: 15px;padding: 10px 0 10px 0">聯繫我們</h4>
+                            <h4 class="font-normal block-title" style="margin-top: 15px; background: rgba(0,0,0,.3);padding: 10px 0 10px 0">聯繫我們</h4>
                             <div class="contactDetail">
                                 <ul class="mui-table-view">
                                     <li class="mui-table-view-cell">
                                         <h4 class="font-normal border-bottom" style="margin-top: 15px;">電話</h4>
-                                        <p>+852 3107 1628</p>
-                                        <p>+852 9150 8399</p>
-                                        <p>+852 9869 3253</p>
+                                        <p><a  href="tel:+852 3107 1628">+852 3107 1628</a></p>
+                                        <p><a  href="tel:+852 9150 8399">+852 9150 8399</a></p>
+                                        <p><a  href="tel:+852 9869 3253">+852 9869 3253</a></p>
                                     </li>
                                     <li class="mui-table-view-cell" style="font-size: 100%">
                                         <h4 class="font-normal border-bottom" style="margin-top: 15px;">傳真</h4>
@@ -108,9 +108,10 @@
                                 <div class="aboutUs mui-col-sm-6 mui-col-xs-12">
                                     <h4 class="font-normal block-title" style="color: #fff;text-align: left">產品</h4>
                                     <ul class="mui-table-view" style="color: #fff;">
-                                        <li class="mui-table-view-cell">Item 1</li>
-                                        <li class="mui-table-view-cell">Item 2</li>
-                                        <li class="mui-table-view-cell">Item 3</li>
+                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#category1"}'>自助餐餐具</a></li>
+                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#category2"}'>陶瓷餐具</a></li>
+                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#category3"}'>不鏽鋼餐具</a></li>
+                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html"}'>更多</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -130,13 +131,13 @@
                 <span class="mui-icon iconfont mui-icon-mall"></span>
                 <span class="mui-tab-label">商品</span>
             </a>
-            <a class="mui-tab-item" id="a3" data-openwindow='{"url":"aboutUs.html#"}'>
-                <span class="mui-icon mui-icon-chat"></span>
-                <span class="mui-tab-label">關於我們</span>
+            <a class="mui-tab-item" id="a3" href="tel:+852 3107 1628">
+                <span class="mui-icon mui-icon-phone"></span>
+                <span class="mui-tab-label">電話</span>
             </a>
-			<a class="mui-tab-item mui-active" id="a4">
-				<span class="mui-icon mui-icon-location"></span>
-				<span class="mui-tab-label">聯繫我們</span>
+			<a class="mui-tab-item mui-active" href="mailto:info@paktatasia.com?subject=邮件标题&body=邮件内容" id="a4">
+				<span class="mui-icon mui-icon-email"></span>
+				<span class="mui-tab-label">郵件</span>
 			</a>
         </nav>
 
