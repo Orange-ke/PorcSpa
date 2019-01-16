@@ -207,6 +207,10 @@
                 mui('.mui-off-canvas-wrap').offCanvas('show');
             });
 
+            mui('body').on('tap','a',function(){
+                window.top.location.href=this.href;
+            });
+
 //			mui.plusReady(function() {
 //				var tabBarControl = new TabBarControl();
 //				mui('.mui-scroll-wrapper').scroll();

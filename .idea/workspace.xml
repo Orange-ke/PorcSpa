@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e0a7bf9c-93d7-4905-b713-047406f7d091" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutUs.html" afterPath="$PROJECT_DIR$/aboutUs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contactUs.html" afterPath="$PROJECT_DIR$/contactUs.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.html" afterPath="$PROJECT_DIR$/product.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +21,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="190" column="53" lean-forward="true" selection-start-line="190" selection-start-column="53" selection-end-line="190" selection-end-column="53" />
+            <state relative-caret-position="306">
+              <caret line="210" column="51" lean-forward="true" selection-start-line="210" selection-start-column="51" selection-end-line="210" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -333,7 +330,7 @@
       <updated>1546943942308</updated>
       <workItem from="1546943944723" duration="4292000" />
       <workItem from="1547126992429" duration="701000" />
-      <workItem from="1547127975646" duration="47453000" />
+      <workItem from="1547127975646" duration="48003000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <created>1546945503119</created>
@@ -454,11 +451,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547551679310</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="setup">
+      <created>1547647768225</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1547647768225</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52446000" />
+    <option name="totallyTimeSpent" value="52996000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -707,8 +711,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="190" column="53" lean-forward="true" selection-start-line="190" selection-start-column="53" selection-end-line="190" selection-end-column="53" />
+        <state relative-caret-position="306">
+          <caret line="210" column="51" lean-forward="true" selection-start-line="210" selection-start-column="51" selection-end-line="210" selection-end-column="51" />
           <folding>
             <element signature="n#style#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
