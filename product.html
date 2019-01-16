@@ -251,10 +251,9 @@
                 var self = mui(this);
                 self.button('loading');
                 var categoryName = self[0].getAttribute("data-name");
-                mask.show();
-                console.log(mui(".mui-backdrop"));
                 $.getJSON( "json/" + categoryName + ".json", function( data ) {
                     var imgData = data.imgList;
+                    mask.show();
                     self.button('reset');
                     for (var value in imgData) {
                         $(".cube-face[data-name=" + value +"]").css({
