@@ -156,6 +156,10 @@
                 mui('.mui-off-canvas-wrap').offCanvas('show');
             });
 
+            mui('body').on('tap','#a3 #a4',function(){
+                window.top.location.href=this.href;
+            });
+
 //			mui.plusReady(function() {
 //				var tabBarControl = new TabBarControl();
 //				mui('.mui-scroll-wrapper').scroll();
