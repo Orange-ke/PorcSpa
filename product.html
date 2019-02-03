@@ -14,64 +14,20 @@
             aside ul li {border-bottom: 2px solid #FFA000; background: #212121; color: #fff; text-align: center;}
             .categoryList ul li {border-bottom: 1px solid #ddd;text-shadow: 1px 1px 0 rgba(255, 255, 255, .7);}
             .categoryList ul li a {color: #FFA000; display: block;}
-            #bgImg {display: inline-block; height: 50px; width: 50px; background-image: url('images/header.png');background-size: cover; background-position: center;}
+            #bgImg {display: inline-block; height: 44px; width: 100%; background: url('images/header.jpg') no-repeat;background-size: contain; background-position: 20px 50%; font-size: 100%; color: #fff; }
 			.mui-bar-transparent input{background: rgba(220,220,220,0.7);}
-			.mui-slider .mui-slider-group .mui-slider-item{max-height: 150px;height: 150px;}
 			.mui-slider .mui-slider-group .mui-slider-item img{height: 100%;}
-			.mui-grid-view.mui-grid-9{background: #F7F7F7;}
 			.mui-grid-view.mui-grid-9 .mui-table-view-cell{padding: 0;font-size: 12px;border-color: #DBDBDB;}
 			.mui-ios .mui-grid-view.mui-grid-9 .mui-table-view-cell{border-width: 0.5px;}
 			.mui-grid-view.mui-grid-9 .mui-table-view-cell span{color: #FE3C3D;font-weight: bold;}
 
 			.block-title{text-align: center;margin: 10px 0;}
 			.mui-row,.mui-row > div{padding: 0 5px;}
-			.recommend .mui-col-xs-6 .img{overflow: hidden;position: relative;}
-			.recommend .mui-col-xs-6 .img:before{content: '';display: block;margin-top: 75%;}
-			.recommend .mui-col-xs-6 img{width: 100%;height: 100%;position: absolute;top: 0px;}
-			.recommend .mui-col-xs-6 h6{margin: 8px 0;text-align: center;}
-
-			.mechanism .mui-col-xs-4 .img{overflow: hidden;position: relative;margin-bottom: 10px;}
-			.mechanism .mui-col-xs-4 .img:before{content: '';display: block;margin-top: 40%;}
-			.mechanism .mui-col-xs-4 img{width: 100%;height: 100%;position: absolute;top: 0px;}
-
-			.expert .expert-top .img{width: 50px;height: 50px;border-radius: 50%;overflow: hidden;border: #DBDBDB 1px solid;float: left;margin-right: 5px;}
-			.expert .expert-top .img img{width: 100%;height: auto;}
-			.expert .expert-top h6{padding-top: 10px;}
-			.expert .mui-col-xs-6 > h6{font-size: 12px;}
-			.mui-text-center{font-size: 14px;padding: 10px 0;}
-			.mui-row .ajaxLoader {text-align: center;padding: 15px 0;}
+            .mui-text-center{font-size: 14px;padding: 10px 0;}
 		</style>
 	</head>
 
     <body>
-        <div hidden id="show" style="width: 100%;z-index: 999; background: #dca7a7; position: absolute; height: 65vh; top: 15vh;">
-            <span id="showClose" class="mui-icon mui-icon-closeempty" style="width: 50px; height: 50px;color: #FFA000; display: inline-block; position: absolute;right: 5px; top: -50px; font-size: 50px; background: rgba(255,255,255,.5);border-radius: 50px;"></span>
-            <input type="radio" name="cube-controller" id="show-front" checked>
-            <input type="radio" name="cube-controller" id="show-back">
-            <input type="radio" name="cube-controller" id="show-top">
-            <input type="radio" name="cube-controller" id="show-bottom">
-            <input type="radio" name="cube-controller" id="show-left">
-            <input type="radio" name="cube-controller" id="show-right">
-            <div class="cube-wrap">
-                <div class="cube goFront">
-                    <div class="cube-face cube-face-front" data-name="imgFront"></div>
-                    <div class="cube-face cube-face-back" data-name="imgBack"></div>
-                    <div class="cube-face cube-face-top" data-name="imgTop"></div>
-                    <div class="cube-face cube-face-left" data-name="imgLeft"></div>
-                    <div class="cube-face cube-face-right" data-name="imgRight"></div>
-                    <div class="cube-face cube-face-bottom" data-name="imgBottom"></div>
-                </div>
-            </div>
-            <div class="button-wrap">
-                <label class="forOperation for-front active" sign="goFront" for="show-front">前</label>
-                <label class="forOperation for-back" sign="goBack" for="show-back">后</label>
-                <label class="forOperation for-top" sign="goTop" for="show-top">上</label>
-                <label class="forOperation for-bottom" sign="goBottom" for="show-bottom">下</label>
-                <label class="forOperation for-left" sign="goLeft" for="show-left">左</label>
-                <label class="forOperation for-right" sign="goRight" for="show-right">右</label>
-            </div>
-        </div>
-
         <!-- 侧滑导航根容器 -->
         <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
             <!-- 菜单容器 -->
@@ -80,7 +36,6 @@
                     <div class="mui-scroll">
                         <ul class="mui-table-view">
                             <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html"}'>主頁</a></li>
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html"}'>產品</a></li>
                             <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html"}'>關於我們</a></li>
                             <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html"}'>聯繫我們</a></li>
                         </ul>
@@ -89,9 +44,8 @@
             </aside>
             <!-- 主页面标题 -->
             <header class="mui-bar mui-bar-nav" id="header" style="background: #212121;">
-                <a class="mui-pull-left" id="bgImg" data-openwindow='{"url":"index.html"}'></a>
                 <a id="menu" class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" style="color: #FFA000;"></a>
-                <h1 class="mui-title" style="color: #ffffff;">百達亞洲實業有限公司</h1>
+                <h1 class="mui-title" style="color: #ffffff;"><a id="bgImg" data-openwindow='{"url":"index.html"}'>百達亞洲實業有限公司</a></h1>
             </header>
             <div class="mui-inner-wrap">
                 <!--&lt;!&ndash; 主页面标题 &ndash;&gt;-->
@@ -102,83 +56,35 @@
                 <div class="mui-content mui-scroll-wrapper" style="bottom: 50px;top: 50px;">
                     <div class="mui-scroll" style="background: url('images/bg.jpg') repeat;">
 
-                        <div class="special border-bottom">
-                            <h4 class="font-normal block-title" style="margin-top: 15px; background: rgba(0,0,0,.3);padding: 10px 0 10px 0">餐具分類</h4>
-                            <div class="mui-row categoryList">
-                                <ul class="mui-table-view" style="background: transparent;">
-                                    <li class="mui-table-view-cell category" id="category1">
-                                        <a data-name="category1" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">自助餐餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                    <li class="mui-table-view-cell category" id="category2">
-                                        <a data-name="category2" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">陶瓷餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                    <li class="mui-table-view-cell category" id="category3">
-                                        <a data-name="category3" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">不鏽鋼餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                    <li class="mui-table-view-cell category">
-                                        <a data-name="category4" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">廚房用具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                    <li class="mui-table-view-cell category">
-                                        <a data-name="category5" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">廚師服和紡織品<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                    <li class="mui-table-view-cell category">
-                                        <a data-name="category6" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">筷子和筷架<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                    <li class="mui-table-view-cell category">
-                                        <a data-name="category7" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">餐車和垃圾桶<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                    <li class="mui-table-view-cell category">
-                                        <a data-name="category8" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">玻璃餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                    <li class="mui-table-view-cell category">
-                                        <a data-name="category9" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">色釉餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                    <li class="mui-table-view-cell category">
-                                        <a data-name="category10" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">日式餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                    <li class="mui-table-view-cell category">
-                                        <a data-name="category11" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">科學瓷餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                    <li class="mui-table-view-cell category">
-                                        <a data-name="category12" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">系列<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                    <li class="mui-table-view-cell category">
-                                        <a data-name="category13" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">木質餐具和創意餐具<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                    <li class="mui-table-view-cell category">
-                                        <a data-name="category14" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">餐桌餐椅<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                    <li class="mui-table-view-cell category">
-                                        <a data-name="category15" data-loading-icon="mui-spinner mui-spinner-custom" data-loading-icon-position="right" class="mui-btn">其他<span class="mui-icon mui-icon-arrowright mui-pull-right" style="color: #FFA000;"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="mui-text-center"><p>查看更多信息請移步PC端登陸 <a target="_blank" data-openwindow='{"url":"http://www.paktatasia.com"}'> www.paktatasia.com</a></p></div>
-                        </div>
+                        <h4 id="specialName" class="font-normal block-title" style="padding: 10px 0 10px 0; border-bottom: 1px solid #212121; width: 90%; margin: 15px auto;">百達亞洲</h4>
 
-                        <div class="footer border-bottom mui-content" style="margin-top: 15px; background: rgba(0,0,0,.3);padding: 10px 0 10px 0">
-                            <div class="mui-row">
-                                <div class="navigation mui-col-sm-6 mui-col-xs-12">
-                                    <h4 class="font-normal block-title" style="color: #fff; text-align: left">導航</h4>
-                                    <ul class="mui-table-view" style="color: #fff;">
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html#"}'>主頁</a></li>
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#"}'>產品</a></li>
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html#"}'>關於我們</a></li>
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html#"}'>聯繫我們</a></li>
-                                    </ul>
-                                </div>
-                                <div class="aboutUs mui-col-sm-6 mui-col-xs-12">
-                                    <h4 class="font-normal block-title" style="color: #fff;text-align: left">產品</h4>
-                                    <ul class="mui-table-view" style="color: #fff;">
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#category1"}'>自助餐餐具</a></li>
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#category2"}'>陶瓷餐具</a></li>
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#category3"}'>不鏽鋼餐具</a></li>
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html"}'>更多</a></li>
-                                    </ul>
+                        <div id="show" style="width: 100%;z-index: 999; background: #212121; position: absolute; height: 65vh; top: 8vh;">
+                            <input type="radio" name="cube-controller" id="show-front" checked>
+                            <input type="radio" name="cube-controller" id="show-back">
+                            <input type="radio" name="cube-controller" id="show-top">
+                            <input type="radio" name="cube-controller" id="show-bottom">
+                            <input type="radio" name="cube-controller" id="show-left">
+                            <input type="radio" name="cube-controller" id="show-right">
+                            <div class="cube-wrap">
+                                <div class="cube goFront">
+                                    <div class="cube-face cube-face-front" data-name="imgFront"></div>
+                                    <div class="cube-face cube-face-back" data-name="imgBack"></div>
+                                    <div class="cube-face cube-face-top" data-name="imgTop"></div>
+                                    <div class="cube-face cube-face-left" data-name="imgLeft"></div>
+                                    <div class="cube-face cube-face-right" data-name="imgRight"></div>
+                                    <div class="cube-face cube-face-bottom" data-name="imgBottom"></div>
                                 </div>
                             </div>
+                            <div class="button-wrap">
+                                <label class="forOperation for-front active" sign="goFront" for="show-front">前</label>
+                                <label class="forOperation for-back" sign="goBack" for="show-back">后</label>
+                                <label class="forOperation for-top" sign="goTop" for="show-top">上</label>
+                                <label class="forOperation for-bottom" sign="goBottom" for="show-bottom">下</label>
+                                <label class="forOperation for-left" sign="goLeft" for="show-left">左</label>
+                                <label class="forOperation for-right" sign="goRight" for="show-right">右</label>
+                            </div>
                         </div>
-
+                        <div style="width: 100%;position: absolute; bottom: 0;" class="mui-text-center"><p style="display: block;text-align: center;">查看更多信息請移步PC端登陸 <a target="_blank" data-openwindow='{"url":"http://www.paktatasia.com"}'> www.paktatasia.com</a></p></div>
                     </div>
                 </div>
             </div>
@@ -188,10 +94,6 @@
             <a class="mui-tab-item" id="a1" data-openwindow='{"url":"index.html"}'>
                 <span class="mui-icon mui-icon-home"></span>
                 <span class="mui-tab-label">主頁</span>
-            </a>
-            <a class="mui-tab-item mui-active" id="a2">
-                <span class="mui-icon iconfont mui-icon-mall"></span>
-                <span class="mui-tab-label">產品</span>
             </a>
             <a class="mui-tab-item " id="a3" href="tel:+852 3107 1628">
                 <span class="mui-icon mui-icon-phone"></span>
@@ -206,9 +108,19 @@
 		<script src="js/mui.js"></script>
 		<script src="js/util.js"></script>
         <script src="js/main.js"></script>
-		<script src="js/token.js"></script>
         <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/js.js"></script>
 		<script type="text/javascript" charset="utf-8">
+            var specailName = [
+                '',
+                '純白色陶瓷系列',
+                '日式陶瓷系列',
+                '中式陶瓷系列',
+                '科學瓷系列',
+                '玻璃器皿系列',
+                '不鏽鋼器皿系列',
+                '雜項'
+            ];
 			mui.init();
             mui('.mui-slider').slider({
                 interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
@@ -219,24 +131,13 @@
                 mui('.mui-off-canvas-wrap').offCanvas('show');
             });
 
-            var mask = mui.createMask(callback);//callback为用户点击蒙版时自动执行的回调；
-
-            function callback() {
-                $("#show").fadeOut();
-            }
-
-            $('.forOperation').click(function() {
+            $('.forOperation').on("tap",function() {
                 var self = $(this);
                 var operater = self.attr("sign");
                 var oldOperater = $("label.active").attr("sign") || "";
                 $(".forOperation").removeClass("active");
                 self.addClass("active");
                 $(".cube").removeClass(oldOperater).addClass(operater);
-            });
-
-            document.querySelector('#showClose').addEventListener('tap',function() {
-                $("#show").fadeOut();
-                mask.close();
             });
 
             mui('body').on('tap','#a3',function(){
@@ -247,25 +148,21 @@
                 mui.alert('info@paktatasia.com','郵箱','我知道了',null,'div');
             });
 
-            mui(document.body).on('tap', '.mui-btn', function(e) {
-                var self = mui(this);
-                self.button('loading');
-                var categoryName = self[0].getAttribute("data-name");
-                $.getJSON( "json/" + categoryName + ".json", function( data ) {
-                    var imgData = data.imgList;
-                    mask.show();
-                    self.button('reset');
-                    for (var value in imgData) {
-                        $(".cube-face[data-name=" + value +"]").css({
-                            "background-image": "url('" + imgData[value] + "')"
-                        })
-                    }
-                    var oldOperater = $("label.active").attr("sign") || "";
-                    $(".forOperation").removeClass("active");
-                    $(".for-front").addClass("active");
-                    $(".cube").removeClass(oldOperater).addClass("goFront");
-                    $("#show").fadeIn();
-                });
+            var specialId = getUrlPer("specialId") + '';
+            var categoryName = "category" + specialId;
+            var num = Number(specialId);
+            $("#specialName").text(specailName[num]);
+            $.getJSON( "json/" + categoryName + ".json", function( data ) {
+                var imgData = data.imgList;
+                for (var value in imgData) {
+                    $(".cube-face[data-name=" + value +"]").css({
+                        "background-image": "url('" + imgData[value] + "')"
+                    })
+                }
+                var oldOperater = $("label.active").attr("sign") || "";
+                $(".forOperation").removeClass("active");
+                $(".for-front").addClass("active");
+                $(".cube").removeClass(oldOperater).addClass("goFront");
             });
 
 		</script>

@@ -11,33 +11,19 @@
             #header {box-shadow: 1px 3px 3px #212121; background: #212121;}
             aside ul li {border-bottom: 2px solid #FFA000; background: #212121; color: #fff; text-align: center;}
             .specialList ul li .mui-card {box-shadow: 1px 3px 3px #212121; background: #212121; color: #fff;}
-            #bgImg {display: inline-block; height: 50px; width: 50px; background-image: url('images/header.png');background-size: cover; background-position: center;}
+            .shortInfoCon {padding-bottom: 10px;}
+            #bgImg {display: inline-block; height: 44px; width: 100%; background: url('images/header.jpg') no-repeat;background-size: contain; background-position: 20px 50%; font-size: 100%; color: #fff; }
+            .shortInfo p {padding: 0 10px; text-shadow: 1px 1px 0 rgba(255, 255, 255, .7); font-size: 100%; color: #000;text-align: center; }
             .mui-table-view-cell:after {height: 0;}
 			.mui-bar-transparent input{background: rgba(220,220,220,0.7);}
 			.mui-slider .mui-slider-group .mui-slider-item{max-height: 200px;height: 200px;}
 			.mui-slider .mui-slider-group .mui-slider-item img{height: 100%;}
-			.mui-grid-view.mui-grid-9{background: #F7F7F7;}
 			.mui-grid-view.mui-grid-9 .mui-table-view-cell{padding: 0;font-size: 12px;border-color: #DBDBDB;}
 			.mui-ios .mui-grid-view.mui-grid-9 .mui-table-view-cell{border-width: 0.5px;}
 			.mui-grid-view.mui-grid-9 .mui-table-view-cell span{color: #FE3C3D;font-weight: bold;}
 			
 			.block-title{text-align: center;margin: 10px 0;}
-			.mui-row,.mui-row > div{padding: 0 5px;}
-			.recommend .mui-col-xs-6 .img{overflow: hidden;position: relative;}
-			.recommend .mui-col-xs-6 .img:before{content: '';display: block;margin-top: 75%;}
-			.recommend .mui-col-xs-6 img{width: 100%;height: 100%;position: absolute;top: 0px;}
-			.recommend .mui-col-xs-6 h6{margin: 8px 0;text-align: center;}
-			
-			.mechanism .mui-col-xs-4 .img{overflow: hidden;position: relative;margin-bottom: 10px;}
-			.mechanism .mui-col-xs-4 .img:before{content: '';display: block;margin-top: 40%;}
-			.mechanism .mui-col-xs-4 img{width: 100%;height: 100%;position: absolute;top: 0px;}
-			
-			.expert .expert-top .img{width: 50px;height: 50px;border-radius: 50%;overflow: hidden;border: #DBDBDB 1px solid;float: left;margin-right: 5px;}
-			.expert .expert-top .img img{width: 100%;height: auto;}
-			.expert .expert-top h6{padding-top: 10px;}
-			.expert .mui-col-xs-6 > h6{font-size: 12px;}
 			.mui-text-center{font-size: 14px;padding: 10px 0;}
-			.mui-row .ajaxLoader {text-align: center;padding: 15px 0;}
 		</style>
 	</head>
 
@@ -52,7 +38,6 @@
                     <div class="mui-scroll">
                         <ul class="mui-table-view">
                             <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html"}'>主頁</a></li>
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html"}'>產品</a></li>
                             <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html"}'>關於我們</a></li>
                             <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html"}'>聯繫我們</a></li>
                         </ul>
@@ -61,9 +46,8 @@
             </aside>
             <!-- 主页面标题 -->
             <header class="mui-bar mui-bar-nav" id="header" style="background: #212121;">
-                <a class="mui-pull-left" id="bgImg" data-openwindow='{"url":"index.html"}'></a>
                 <a id="menu" class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" style="color: #FFA000;"></a>
-                <h1 class="mui-title" style="color: #ffffff;">百達亞洲實業有限公司</h1>
+                <h1 class="mui-title" style="color: #ffffff;"><a id="bgImg" data-openwindow='{"url":"index.html"}'>百達亞洲實業有限公司</a></h1>
             </header>
             <div class="mui-inner-wrap">
                 <!--&lt;!&ndash; 主页面标题 &ndash;&gt;-->
@@ -90,83 +74,130 @@
                         </div>
 
                         <div class="special border-bottom">
-                            <h4 class="font-normal block-title" style="margin-top: 15px; background: rgba(0,0,0,.3);padding: 10px 0 10px 0">特色餐具</h4>
+                            <div class="shortInfoCon">
+                                <h4 class="font-normal block-title" style="padding: 10px 0 10px 0; border-bottom: 1px solid #212121; width: 90%; margin: 15px auto;">百達亞洲</h4>
+                                <div class="shortInfo">
+                                    <p>百達亞洲成立於2010年，主營餐具批發及提供餐飲設計，致力為香港各大酒店、酒樓、餐廳及連鎖食肆提供傢俬。</p>
+                                    <p>位於觀塘的展廳佔地5,000尺，設有3萬多個品種的傢俬，選購空間寬敞舒適，可令顧客自由搭配構思佳餚。</p>
+                                </div>
+                            </div>
                             <div class="mui-row specialList">
-                                <ul class="mui-table-view" style="background: transparent;">
-                                    <li class="mui-table-view-cell">
+                                <ul id="list" class="mui-table-view" style="background: transparent;">
+                                    <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=1"}'>
                                         <div class="mui-card">
                                             <!--页眉，放置标题-->
                                             <div class="mui-card-header">
                                                 <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
-                                                <span>特色1</span>
+                                                <span>純白色陶瓷系列</span>
                                             </div>
                                             <!--内容区-->
                                             <div class="mui-card-content">
                                                 <img src="images/sp1.jpg" alt width="100%">
                                             </div>
                                             <div class="mui-card-footer">
-                                                <p>品種多樣，製作精細，滿足您的各種需求，給餐廳增加不一樣的顏色！</p>
+                                                <p>骨瓷、骨质瓷、鎂質強化瓷</p>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="mui-table-view-cell">
+                                    <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=2"}'>
                                         <div class="mui-card">
                                             <!--页眉，放置标题-->
                                             <div class="mui-card-header">
                                                 <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
-                                                <span>特色2</span>
+                                                <span>日式陶瓷系列</span>
                                             </div>
                                             <!--内容区-->
                                             <div class="mui-card-content">
                                                 <img src="images/sp2.jpg" alt width="100%">
                                             </div>
                                             <div class="mui-card-footer">
-                                                <p>品種多樣，製作精細，滿足您的各種需求，給餐廳增加不一樣的顏色！</p>
+                                                <p>有田燒、美濃燒、波佐見燒</p>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="mui-table-view-cell">
+                                    <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=3"}'>
                                         <div class="mui-card">
                                             <!--页眉，放置标题-->
                                             <div class="mui-card-header">
                                                 <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
-                                                <span>特色3</span>
+                                                <span>中式陶瓷系列</span>
                                             </div>
                                             <!--内容区-->
                                             <div class="mui-card-content">
                                                 <img src="images/sp3.jpg" alt width="100%">
                                             </div>
                                             <div class="mui-card-footer">
-                                                <p>品種多樣，製作精細，滿足您的各種需求，給餐廳增加不一樣的顏色！</p>
+                                                <p>公雞、纏枝蓮紋、西湖美景</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=4"}'>
+                                        <div class="mui-card">
+                                            <!--页眉，放置标题-->
+                                            <div class="mui-card-header">
+                                                <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
+                                                <span>科學瓷系列</span>
+                                            </div>
+                                            <!--内容区-->
+                                            <div class="mui-card-content">
+                                                <img src="images/sp3.jpg" alt width="100%">
+                                            </div>
+                                            <div class="mui-card-footer">
+                                                <p>白色科學瓷、黑色科學瓷、色釉科學瓷</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=5"}'>
+                                        <div class="mui-card">
+                                            <!--页眉，放置标题-->
+                                            <div class="mui-card-header">
+                                                <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
+                                                <span>玻璃器皿系列</span>
+                                            </div>
+                                            <!--内容区-->
+                                            <div class="mui-card-content">
+                                                <img src="images/sp3.jpg" alt width="100%">
+                                            </div>
+                                            <div class="mui-card-footer">
+                                                <p>Arcoroc、Lucaris、Ocean、Libbey、Bormioli、Pasabahce、Riedel</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=6"}'>
+                                        <div class="mui-card">
+                                            <!--页眉，放置标题-->
+                                            <div class="mui-card-header">
+                                                <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
+                                                <span>不鏽鋼器皿系列</span>
+                                            </div>
+                                            <!--内容区-->
+                                            <div class="mui-card-content">
+                                                <img src="images/sp3.jpg" alt width="100%">
+                                            </div>
+                                            <div class="mui-card-footer">
+                                                <p>自助餐爐、自助餐保溫燈、食物點心展示架</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=7"}'>
+                                        <div class="mui-card">
+                                            <!--页眉，放置标题-->
+                                            <div class="mui-card-header">
+                                                <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
+                                                <span>雜項</span>
+                                            </div>
+                                            <!--内容区-->
+                                            <div class="mui-card-content">
+                                                <img src="images/sp3.jpg" alt width="100%">
+                                            </div>
+                                            <div class="mui-card-footer">
+                                                <p>廚師服、轉盤、下欄盤、餐車、杯框、凳子、餐墊、圾桶、等等</p>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                             <div class="mui-text-center"><p>查看更多信息請移步PC端登陸 <a target="_blank" data-openwindow='{"url":"http://www.paktatasia.com"}'> www.paktatasia.com</a></p></div>
-                        </div>
-
-                        <div class="footer border-bottom mui-content" style="margin-top: 15px; background: rgba(0,0,0,.3);padding: 10px 0 10px 0">
-                            <div class="mui-row">
-                                <div class="navigation mui-col-sm-6 mui-col-xs-12">
-                                    <h4 class="font-normal block-title" style="color: #fff; text-align: left">導航</h4>
-                                    <ul class="mui-table-view" style="color: #fff;">
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html#"}'>主頁</a></li>
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#"}'>產品</a></li>
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html#"}'>關於我們</a></li>
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html#"}'>聯繫我們</a></li>
-                                    </ul>
-                                </div>
-                                <div class="aboutUs mui-col-sm-6 mui-col-xs-12">
-                                    <h4 class="font-normal block-title" style="color: #fff;text-align: left">產品</h4>
-                                    <ul class="mui-table-view" style="color: #fff;">
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#category1"}'>自助餐餐具</a></li>
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#category2"}'>陶瓷餐具</a></li>
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html#category3"}'>不鏽鋼餐具</a></li>
-                                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"product.html"}'>更多</a></li>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
 
                     </div>
@@ -178,10 +209,6 @@
             <a class="mui-tab-item mui-active" id="a1">
                 <span class="mui-icon mui-icon-home"></span>
                 <span class="mui-tab-label">主頁</span>
-            </a>
-            <a class="mui-tab-item " id="a2" data-openwindow='{"url":"product.html"}'>
-                <span class="mui-icon iconfont mui-icon-mall"></span>
-                <span class="mui-tab-label">產品</span>
             </a>
             <a class="mui-tab-item " id="a3" href="tel:+852 3107 1628">
                 <span class="mui-icon mui-icon-phone"></span>
@@ -196,7 +223,6 @@
 		<script src="js/mui.js"></script>
 		<script src="js/util.js"></script>
         <script src="js/main.js"></script>
-		<script src="js/token.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			mui.init();
             mui('.mui-slider').slider({
@@ -215,6 +241,15 @@
             mui('#nav').on('tap','#a4',function(){
                 mui.alert('info@paktatasia.com','郵箱','我知道了',null,'div');
             });
+
+
+
+//            var lazyLoad = mui('#list').imageLazyload({
+//                placeholder: '../images/60x60.gif',
+//                autoDestroy: false
+//            });
+
+
 
 //			mui.plusReady(function() {
 //				var tabBarControl = new TabBarControl();
