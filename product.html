@@ -6,15 +6,13 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>特色</title>
 		<link href="css/mui.css" rel="stylesheet" />
+        <link href="css/base.css" rel="stylesheet" />
         <link href="css/threeD.css" rel="stylesheet" />
 		<style type="text/css">
             .mui-table-view-cell:after {height: 0;}
-            #nav {background: #212121;}
-            #header {box-shadow: 1px 3px 3px #212121; background: #212121;}
             aside ul li {border-bottom: 2px solid #FFA000; background: #212121; color: #fff; text-align: center;}
             .categoryList ul li {border-bottom: 1px solid #ddd;text-shadow: 1px 1px 0 rgba(255, 255, 255, .7);}
             .categoryList ul li a {color: #FFA000; display: block;}
-            #bgImg {display: inline-block; height: 44px; width: 100%; background: url('images/header.jpg') no-repeat;background-size: contain; background-position: 10% 50%; font-size: 100%; color: #fff; }
 			.mui-bar-transparent input{background: rgba(220,220,220,0.7);}
 			.mui-slider .mui-slider-group .mui-slider-item img{height: 100%;}
 			.mui-grid-view.mui-grid-9 .mui-table-view-cell{padding: 0;font-size: 12px;border-color: #DBDBDB;}
@@ -45,7 +43,12 @@
             <!-- 主页面标题 -->
             <header class="mui-bar mui-bar-nav" id="header" style="background: #212121;">
                 <a id="menu" class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" style="color: #FFA000;"></a>
-                <h1 class="mui-title" style="color: #ffffff;"><a id="bgImg" data-openwindow='{"url":"index.html"}'>百達亞洲實業有限公司</a></h1>
+                <h1 class="mui-title" style="color: #ffffff;">
+                    <a id="bgImg" data-openwindow='{"url":"index.html"}'>
+                        <span>百達亞洲實業有限公司</span>
+                        <span>Pak Tak Asia Industrial Limited</span>
+                    </a>
+                </h1>
             </header>
             <div class="mui-inner-wrap">
                 <!--&lt;!&ndash; 主页面标题 &ndash;&gt;-->
@@ -53,7 +56,7 @@
                     <!--<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>-->
                     <!--<h1 class="mui-title">标题</h1>-->
                 <!--</header>-->
-                <div class="mui-content mui-scroll-wrapper" style="bottom: 50px;top: 50px;">
+                <div class="mui-content mui-scroll-wrapper" style="bottom: 50px;top: 60px;">
                     <div class="mui-scroll" style="background: url('images/bg.jpg') repeat;">
 
                         <h4 id="specialName" class="font-normal block-title" style="padding: 10px 0 10px 0; border-bottom: 1px solid #212121; width: 90%; margin: 15px auto;">百達亞洲</h4>
@@ -103,6 +106,10 @@
                 <span class="mui-icon mui-icon-email"></span>
                 <span class="mui-tab-label">郵件</span>
 			</a>
+            <a class="mui-tab-item " id="a2" data-openwindow='{"url":"contactUs.html"}'>
+                <span class="mui-icon mui-icon-email"></span>
+                <span class="mui-tab-label">地址</span>
+            </a>
         </nav>
 
 		<script src="js/mui.js"></script>

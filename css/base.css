@@ -1,0 +1,10 @@
+#nav {background: #212121;}
+#header {box-shadow: 1px 3px 3px #212121; height: 55px; background: #212121;}
+#bgImg {display: inline-block; position: relative; height: 55px; width: 100%; background: url('../images/header.jpg') no-repeat;background-size: contain; background-position: 8% 50%; font-size: 100%; color: #fff; }
+#bgImg span { display: inline-block; position: absolute; left: 23%;}
+#bgImg span:nth-child(2) { top: 18px; }
+@media screen and (max-width: 412px)  {
+    #bgImg {
+        font-size: 13px;
+    }
+}
