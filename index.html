@@ -11,7 +11,7 @@
             aside ul li {border-bottom: 2px solid #FFA000; background: #212121; color: #fff; text-align: center;}
             .specialList ul li .mui-card {box-shadow: 1px 3px 3px #212121; background: #212121; color: #fff;}
             .shortInfoCon {padding-bottom: 10px;}
-            .shortInfo p {padding: 0 10px; text-shadow: 1px 1px 0 rgba(255, 255, 255, .7); font-size: 100%; color: #000;text-align: center; }
+            .shortInfo p, .textBuff {padding: 0 10px; text-shadow: 1px 1px 0 rgba(255, 255, 255, .7); font-size: 100%; color: #000;text-align: center; }
             .mui-table-view-cell:after {height: 0;}
 			.mui-bar-transparent input{background: rgba(220,220,220,0.7);}
 			.mui-slider .mui-slider-group .mui-slider-item{max-height: 200px;height: 200px;}
@@ -20,8 +20,10 @@
 			.mui-ios .mui-grid-view.mui-grid-9 .mui-table-view-cell{border-width: 0.5px;}
 			.mui-grid-view.mui-grid-9 .mui-table-view-cell span{color: #FE3C3D;font-weight: bold;}
 			
-			.block-title{text-align: center;margin: 10px 0;}
+			.block-title{text-align: center; padding: 10px 0 10px 0; width: 90%; margin: 15px auto;}
 			.mui-text-center{font-size: 14px;padding: 10px 0;}
+            .mui-top {border-top: 1px solid #212121; border-radius: 10px 10px; padding-top: 10px; box-shadow: 1px 1px 1px #ddd;}
+            .mui-bottom {border-bottom: 1px solid #212121; border-radius: 10px 10px;box-shadow: 1px 1px 1px #ddd;}
 		</style>
 	</head>
 
@@ -63,29 +65,129 @@
                         <!-- 主界面具体展示内容 -->
                         <div class="mui-slider">
                             <div class="mui-slider-group mui-slider-loop">
-                                <div class="mui-slider-item mui-slider-item-duplicate"><img src="images/3.jpg" /></div>
+                                <div class="mui-slider-item mui-slider-item-duplicate"><img src="images/10.jpg" /></div>
                                 <div class="mui-slider-item"><img src="images/1.jpg" /></div>
                                 <div class="mui-slider-item"><img src="images/2.jpg" /></div>
                                 <div class="mui-slider-item"><img src="images/3.jpg" /></div>
+                                <div class="mui-slider-item"><img src="images/4.jpg" /></div>
+                                <div class="mui-slider-item"><img src="images/5.jpg" /></div>
+                                <div class="mui-slider-item"><img src="images/6.jpg" /></div>
+                                <div class="mui-slider-item"><img src="images/7.jpg" /></div>
+                                <div class="mui-slider-item"><img src="images/8.jpg" /></div>
+                                <div class="mui-slider-item"><img src="images/9.jpg" /></div>
+                                <div class="mui-slider-item"><img src="images/10.jpg" /></div>
                                 <div class="mui-slider-item mui-slider-item-duplicate"><img src="images/1.jpg" /></div>
                             </div>
                             <div class="mui-slider-indicator">
                                 <div class="mui-indicator mui-active"></div>
                                 <div class="mui-indicator"></div>
                                 <div class="mui-indicator"></div>
+                                <div class="mui-indicator"></div>
+                                <div class="mui-indicator"></div>
+                                <div class="mui-indicator"></div>
+                                <div class="mui-indicator"></div>
+                                <div class="mui-indicator"></div>
+                                <div class="mui-indicator"></div>
+                                <div class="mui-indicator"></div>
+                                <div class="mui-indicator"></div>
                             </div>
                         </div>
 
                         <div class="special border-bottom">
-                            <div class="shortInfoCon">
-                                <h4 class="font-normal block-title" style="padding: 10px 0 10px 0; border-bottom: 1px solid #212121; width: 90%; margin: 15px auto;">百達亞洲</h4>
-                                <div class="shortInfo">
+                            <div class="shortInfoCon mui-bottom">
+                                <h4 class="textBuff block-title">百達亞洲</h4>
+                                <div class="shortInfo mui-top">
                                     <p>百達亞洲成立於2010年，主營餐具批發及提供餐飲設計，致力為香港各大酒店、酒樓、餐廳及連鎖食肆提供傢俬。</p>
                                     <p>位於觀塘的展廳佔地5,000尺，設有3萬多個品種的傢俬，選購空間寬敞舒適，可令顧客自由搭配構思佳餚。</p>
                                 </div>
                             </div>
-                            <div class="mui-row specialList">
-                                <ul id="list" class="mui-table-view" style="background: transparent;">
+                            <div class="mui-row newComing mui-bottom">
+                                <h4 class="block-title textBuff">新品上市</h4>
+                                <div class="mui-top">
+                                    <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="background: transparent; height:400px;">
+                                        <div class="mui-scroll" style="background: transparent; height: 260px;">
+                                            <a class="mui-control-item">
+                                                <div class="mui-card">
+                                                    <!--页眉，放置标题-->
+                                                    <div class="mui-card-header">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <!--内容区-->
+                                                    <div class="mui-card-content">
+                                                        <img src="images/sp1.jpg" alt width="100%">
+                                                    </div>
+                                                    <div class="mui-card-footer">
+                                                        <p>骨瓷、骨质瓷、鎂質強化瓷</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="mui-control-item">
+                                                <div class="mui-card">
+                                                    <!--页眉，放置标题-->
+                                                    <div class="mui-card-header">
+                                                        <span>2</span>
+                                                    </div>
+                                                    <!--内容区-->
+                                                    <div class="mui-card-content">
+                                                        <img src="images/sp1.jpg" alt width="100%">
+                                                    </div>
+                                                    <div class="mui-card-footer">
+                                                        <p>骨瓷、骨质瓷、鎂質強化瓷</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="mui-control-item">
+                                                <div class="mui-card">
+                                                    <!--页眉，放置标题-->
+                                                    <div class="mui-card-header">
+                                                        <span>3</span>
+                                                    </div>
+                                                    <!--内容区-->
+                                                    <div class="mui-card-content">
+                                                        <img src="images/sp1.jpg" alt width="100%">
+                                                    </div>
+                                                    <div class="mui-card-footer">
+                                                        <p>骨瓷、骨质瓷、鎂質強化瓷</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="mui-control-item">
+                                                <div class="mui-card">
+                                                    <!--页眉，放置标题-->
+                                                    <div class="mui-card-header">
+                                                        <span>4</span>
+                                                    </div>
+                                                    <!--内容区-->
+                                                    <div class="mui-card-content">
+                                                        <img src="images/sp1.jpg" alt width="100%">
+                                                    </div>
+                                                    <div class="mui-card-footer">
+                                                        <p>骨瓷、骨质瓷、鎂質強化瓷</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="mui-control-item">
+                                                <div class="mui-card">
+                                                    <!--页眉，放置标题-->
+                                                    <div class="mui-card-header">
+                                                        <span>5</span>
+                                                    </div>
+                                                    <!--内容区-->
+                                                    <div class="mui-card-content">
+                                                        <img src="images/sp1.jpg" alt width="100%">
+                                                    </div>
+                                                    <div class="mui-card-footer">
+                                                        <p>骨瓷、骨质瓷、鎂質強化瓷</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mui-row specialList mui-bottom">
+                                <h4 class="block-title textBuff">特色餐具</h4>
+                                <ul id="list" class="mui-table-view mui-top" style="background: transparent;">
                                     <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=1"}'>
                                         <div class="mui-card">
                                             <!--页眉，放置标题-->
@@ -143,7 +245,7 @@
                                             </div>
                                             <!--内容区-->
                                             <div class="mui-card-content">
-                                                <img src="images/sp3.jpg" alt width="100%">
+                                                <img src="images/sp4.jpg" alt width="100%">
                                             </div>
                                             <div class="mui-card-footer">
                                                 <p>白色科學瓷、黑色科學瓷、色釉科學瓷</p>
@@ -159,7 +261,7 @@
                                             </div>
                                             <!--内容区-->
                                             <div class="mui-card-content">
-                                                <img src="images/sp3.jpg" alt width="100%">
+                                                <img src="images/sp5.jpg" alt width="100%">
                                             </div>
                                             <div class="mui-card-footer">
                                                 <p>Arcoroc、Lucaris、Ocean、Libbey、Bormioli、Pasabahce、Riedel</p>
@@ -175,7 +277,7 @@
                                             </div>
                                             <!--内容区-->
                                             <div class="mui-card-content">
-                                                <img src="images/sp3.jpg" alt width="100%">
+                                                <img src="images/sp6.jpg" alt width="100%">
                                             </div>
                                             <div class="mui-card-footer">
                                                 <p>自助餐爐、自助餐保溫燈、食物點心展示架</p>
@@ -191,7 +293,7 @@
                                             </div>
                                             <!--内容区-->
                                             <div class="mui-card-content">
-                                                <img src="images/sp3.jpg" alt width="100%">
+                                                <img src="images/sp7.jpg" alt width="100%">
                                             </div>
                                             <div class="mui-card-footer">
                                                 <p>廚師服、轉盤、下欄盤、餐車、杯框、凳子、餐墊、圾桶、等等</p>
