@@ -22,8 +22,8 @@
 			
 			.block-title{text-align: center; padding: 10px 0 10px 0; width: 90%; margin: 15px auto;}
 			.mui-text-center{font-size: 14px;padding: 10px 0;}
-            .mui-top {border-top: 1px solid #212121; border-radius: 10px 10px; padding-top: 10px; box-shadow: 1px 1px 1px #ddd;}
-            .mui-bottom {border-bottom: 1px solid #212121; border-radius: 10px 10px;box-shadow: 1px 1px 1px #ddd;}
+            .mui-top {border-top: 1px solid #212121; border-radius: 10px 10px; padding-top: 10px;}
+            .mui-bottom {border-bottom: 1px solid #212121; border-radius: 10px 10px;}
 		</style>
 	</head>
 
@@ -103,10 +103,9 @@
                             </div>
                             <div class="mui-row newComing mui-bottom">
                                 <h4 class="block-title textBuff">新品上市</h4>
-                                <div class="mui-content">
-                                <div class="mui-top mui-slider">
-                                    <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="background: transparent; height:400px;">
-                                        <div class="mui-scroll" style="background: transparent; height: 260px;">
+                                <div class="mui-top">
+                                    <div id="newScroll" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="background: transparent;">
+                                        <div class="mui-scroll" style="background: transparent;">
                                             <a class="mui-control-item">
                                                 <div class="mui-card">
                                                     <!--页眉，放置标题-->
@@ -244,7 +243,6 @@
                                             </a>
                                         </div>
                                     </div>
-                                </div>
                                 </div>
                             </div>
                             <div class="mui-row specialList mui-bottom">

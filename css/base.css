@@ -3,8 +3,26 @@
 #bgImg {display: inline-block; position: relative; height: 55px; width: 100%; background: url('../images/header.jpg') no-repeat;background-size: contain; background-position: 8% 50%; font-size: 100%; color: #fff; }
 #bgImg span { display: inline-block; position: absolute; left: 23%;}
 #bgImg span:nth-child(2) { top: 18px; }
+#newScroll {
+    height: 400px;
+}
 @media screen and (max-width: 412px)  {
     #bgImg {
         font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 320px)  {
+    .mui-control-item .mui-card {
+        width: 290px;
+    }
+    #newScroll {
+        height: 370px;
+    }
+    .mui-segmented-control.mui-scroll-wrapper .mui-control-item:nth-child(9),
+    .mui-segmented-control.mui-scroll-wrapper .mui-control-item:nth-child(8),
+    .mui-segmented-control.mui-scroll-wrapper .mui-control-item:nth-child(7),
+    .mui-segmented-control.mui-scroll-wrapper .mui-control-item:nth-child(6){
+        display: none;
     }
 }
