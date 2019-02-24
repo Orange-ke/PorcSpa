@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>新品展示</title>
+    <link href="css/mui.css" rel="stylesheet" />
+    <link href="css/base.css" rel="stylesheet" />
+    <style type="text/css">
+        aside ul li {border-bottom: 2px solid #FFA000; background: #212121; color: #fff; text-align: center;}
+        .specialList ul li .mui-card {box-shadow: 1px 3px 3px #212121; background: #212121; color: #fff;}
+        .shortInfo p, .textBuff {padding: 0 10px; text-shadow: 1px 1px 0 rgba(255, 255, 255, .7); font-size: 100%; color: #000;text-align: center; }
+        .mui-table-view-cell:after {height: 0;}
+        .mui-bar-transparent input{background: rgba(220,220,220,0.7);}
+        .mui-slider .mui-slider-group .mui-slider-item{max-height: 66.5vw;height: 66.5vw;}
+        .mui-slider .mui-slider-group .mui-slider-item img{height: 100%;}
+        .mui-grid-view.mui-grid-9 .mui-table-view-cell{padding: 0;font-size: 12px;border-color: #DBDBDB;}
+        .mui-ios .mui-grid-view.mui-grid-9 .mui-table-view-cell{border-width: 0.5px;}
+        .mui-grid-view.mui-grid-9 .mui-table-view-cell span{color: #FE3C3D;font-weight: bold;}
+
+        .block-title{text-align: center; padding: 10px 0 10px 0; width: 90%; margin: 15px auto;}
+        .mui-text-center{font-size: 14px;padding: 10px 0;}
+        .mui-top {border-top: 1px solid #212121; border-radius: 10px 10px; padding-top: 10px;}
+        .mui-bottom {border-bottom: 1px solid #212121; border-radius: 10px 10px;}
+    </style>
+</head>
+
+<body>
+
+<!-- 侧滑导航根容器 -->
+
+<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+    <!-- 菜单容器 -->
+    <aside class="mui-off-canvas-right">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <ul class="mui-table-view">
+                    <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html"}'>主頁</a></li>
+                    <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html"}'>關於我們</a></li>
+                    <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html"}'>聯繫我們</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- 主页面标题 -->
+    <header class="mui-bar mui-bar-nav" id="header" style="background: #212121;">
+        <a id="menu" class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" style="color: #FFA000;"></a>
+        <h1 class="mui-title" style="color: #ffffff;">
+            <a id="bgImg" data-openwindow='{"url":"index.html"}'>
+                <span>百達亞洲實業有限公司</span>
+                <span>Pak Tak Asia Industrial Limited</span>
+            </a>
+        </h1>
+    </header>
+    <div class="mui-inner-wrap">
+        <!--&lt;!&ndash; 主页面标题 &ndash;&gt;-->
+        <!--<header class="mui-bar mui-bar-nav">-->
+        <!--<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>-->
+        <!--<h1 class="mui-title">标题</h1>-->
+        <!--</header>-->
+        <div class="mui-content mui-scroll-wrapper" style="bottom: 50px;top: 60px;">
+            <div class="mui-scroll" style="background: url('images/bg.jpg') repeat;">
+                <div class="special border-bottom">
+                    <div class="mui-row specialList mui-bottom">
+                        <h4 class="block-title textBuff">新品展示</h4>
+                        <ul id="list" class="mui-table-view mui-top" style="background: transparent;">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="mui-bar mui-bar-tab " id="nav">
+    <a class="mui-tab-item" id="a1" data-openwindow='{"url":"index.html"}'>
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">主頁</span>
+    </a>
+    <a class="mui-tab-item " id="a5" data-openwindow='{"url":"newProd.html"}'>
+        <span class="mui-icon mui-icon-flag"></span>
+        <span class="mui-tab-label">新品</span>
+    </a>
+    <a class="mui-tab-item " id="a3" href="tel:+852 3107 1628">
+        <span class="mui-icon mui-icon-phone"></span>
+        <span class="mui-tab-label">電話</span>
+    </a>
+    <a class="mui-tab-item " id="a4" href="mailto:info@paktatasia.com?subject=邮件标题&body=邮件内容">
+        <span class="mui-icon mui-icon-email"></span>
+        <span class="mui-tab-label">郵件</span>
+    </a>
+    <a class="mui-tab-item " id="a2" data-openwindow='{"url":"contactUs.html"}'>
+        <span class="mui-icon mui-icon-location"></span>
+        <span class="mui-tab-label">地址</span>
+    </a>
+</nav>
+
+<ul hidden>
+    <li class="mui-table-view-cell newItem_clone">
+        <div class="mui-card">
+            <!--内容区-->
+            <div class="mui-card-content">
+                <img src="" alt width="100%">
+            </div>
+        </div>
+    </li>
+</ul>
+
+<script src="js/mui.js"></script>
+<script src="js/util.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/js.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.init();
+    mui('.mui-slider').slider({
+        interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
+    });
+    mui('.mui-scroll-wrapper').scroll();
+
+    document.querySelector('#menu').addEventListener('tap',function () {
+        mui('.mui-off-canvas-wrap').offCanvas('show');
+    });
+
+    mui('#nav').on('tap','#a3',function(){
+        window.top.location.href=this.href;
+    });
+
+    mui('#nav').on('tap','#a4',function(){
+        mui.alert('info@paktatasia.com','郵箱','我知道了',null,'div');
+    });
+
+    var newId = getUrlPer("newId") + '';
+    $.getJSON( "json/"+ newId +".json", function( data ) {
+        var imgData = data.imgList;
+        console.log(imgData);
+        var n = imgData.length;
+        var newItemCon;
+        for (var i = 0;i < n; i++) {
+            newItemCon = $(".newItem_clone").clone(true).removeClass("newItem_clone").addClass("newDetailItem");
+            newItemCon.find("img").attr("src",imgData[i]);
+            $("#list").append(newItemCon);
+        }
+    });
+</script>
+</body>
+
+</html>

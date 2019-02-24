@@ -1,0 +1,14 @@
+{
+	"imgList":
+	[
+		{"imgAdd":"img/newList/n1.jpg", "newId":"n1"},
+		{"imgAdd":"img/newList/n2.jpg", "newId":"n2"},
+		{"imgAdd":"img/newList/n3.jpg", "newId":"n3"},
+		{"imgAdd":"img/newList/n4.jpg", "newId":"n4"},
+		{"imgAdd":"img/newList/n5.jpg", "newId":"n5"},
+		{"imgAdd":"img/newList/n6.jpg", "newId":"n6"},
+		{"imgAdd":"img/newList/n7.jpg", "newId":"n7"},
+		{"imgAdd":"img/newList/n8.jpg", "newId":"n8"},
+		{"imgAdd":"img/newList/n9.jpg", "newId":"n9"}
+	]
+}
