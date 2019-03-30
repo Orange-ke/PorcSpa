@@ -2,90 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0a7bf9c-93d7-4905-b713-047406f7d091" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/11/DC-5233-237-2.6_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n2_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n2_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n2_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n2_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n2_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n3_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n3_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n4_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n4_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n4_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n4_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n4_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n5_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n5_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n5_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n5_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n5_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n6_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n6_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n6_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n6_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newDetail/n6_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap-theme.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sweetalert/sweetalert-dev.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sweetalert/sweetalert.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sweetalert/sweetalert.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sp6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sp7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/newList/n7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/newList/n8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/newList/n9.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/10.jpg" afterPath="$PROJECT_DIR$/images/10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/7.jpg" afterPath="$PROJECT_DIR$/images/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/8.jpg" afterPath="$PROJECT_DIR$/images/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/9.jpg" afterPath="$PROJECT_DIR$/images/9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sp1.jpg" afterPath="$PROJECT_DIR$/images/sp1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sp2.jpg" afterPath="$PROJECT_DIR$/images/sp2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sp3.jpg" afterPath="$PROJECT_DIR$/images/sp3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sp4.jpg" afterPath="$PROJECT_DIR$/images/sp4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sp5.jpg" afterPath="$PROJECT_DIR$/images/sp5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/newDetail/n1_1.jpg" afterPath="$PROJECT_DIR$/img/newDetail/n1_1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/newDetail/n1_2.jpg" afterPath="$PROJECT_DIR$/img/newDetail/n1_2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/newDetail/n1_3.jpg" afterPath="$PROJECT_DIR$/img/newDetail/n1_3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/newDetail/n1_4.jpg" afterPath="$PROJECT_DIR$/img/newDetail/n1_4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/newDetail/n1_5.jpg" afterPath="$PROJECT_DIR$/img/newDetail/n1_5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/newList/n1.jpg" afterPath="$PROJECT_DIR$/img/newList/n1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/newList/n2.jpg" afterPath="$PROJECT_DIR$/img/newList/n2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/newList/n3.jpg" afterPath="$PROJECT_DIR$/img/newList/n3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/newList/n4.jpg" afterPath="$PROJECT_DIR$/img/newList/n4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/newList/n5.jpg" afterPath="$PROJECT_DIR$/img/newList/n5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/newList/n6.jpg" afterPath="$PROJECT_DIR$/img/newList/n6.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutUs.html" afterPath="$PROJECT_DIR$/aboutUs.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contactUs.html" afterPath="$PROJECT_DIR$/contactUs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/base.css" afterPath="$PROJECT_DIR$/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/threeD.css" afterPath="$PROJECT_DIR$/css/threeD.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/category1.json" afterPath="$PROJECT_DIR$/json/category1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/category2.json" afterPath="$PROJECT_DIR$/json/category2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/category3.json" afterPath="$PROJECT_DIR$/json/category3.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/category4.json" afterPath="$PROJECT_DIR$/json/category4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/category5.json" afterPath="$PROJECT_DIR$/json/category5.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/n2.json" afterPath="$PROJECT_DIR$/json/n2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/n3.json" afterPath="$PROJECT_DIR$/json/n3.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/n4.json" afterPath="$PROJECT_DIR$/json/n4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/n5.json" afterPath="$PROJECT_DIR$/json/n5.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/n6.json" afterPath="$PROJECT_DIR$/json/n6.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/newList.json" afterPath="$PROJECT_DIR$/json/newList.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newDetail.html" afterPath="$PROJECT_DIR$/newDetail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newProd.html" afterPath="$PROJECT_DIR$/newProd.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product.html" afterPath="$PROJECT_DIR$/product.html" />
@@ -106,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="224" column="17" lean-forward="true" selection-start-line="207" selection-start-column="16" selection-end-line="224" selection-end-column="17" />
+            <state relative-caret-position="367">
+              <caret line="225" column="15" lean-forward="false" selection-start-line="225" selection-start-column="15" selection-end-line="225" selection-end-column="15" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -121,8 +41,8 @@
       <file leaf-file-name="newProd.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newProd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state relative-caret-position="325">
+              <caret line="109" column="7" lean-forward="false" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -131,8 +51,8 @@
       <file leaf-file-name="newDetail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newDetail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="108" column="7" lean-forward="false" selection-start-line="108" selection-start-column="7" selection-end-line="108" selection-end-column="7" />
+            <state relative-caret-position="336">
+              <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -140,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -153,8 +73,8 @@
       <file leaf-file-name="aboutUs.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aboutUs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="100" column="15" lean-forward="false" selection-start-line="100" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
+            <state relative-caret-position="318">
+              <caret line="101" column="15" lean-forward="false" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -189,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="product.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="101" column="23" lean-forward="true" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
+            <state relative-caret-position="441">
+              <caret line="108" column="15" lean-forward="false" selection-start-line="108" selection-start-column="15" selection-end-line="108" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -233,13 +153,13 @@
         <option value="$PROJECT_DIR$/js/js.js" />
         <option value="$PROJECT_DIR$/css/mui.css" />
         <option value="$PROJECT_DIR$/css/threeD.css" />
+        <option value="$PROJECT_DIR$/css/base.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/newProd.html" />
         <option value="$PROJECT_DIR$/newDetail.html" />
         <option value="$PROJECT_DIR$/aboutUs.html" />
         <option value="$PROJECT_DIR$/contactUs.html" />
         <option value="$PROJECT_DIR$/product.html" />
-        <option value="$PROJECT_DIR$/css/base.css" />
       </list>
     </option>
   </component>
@@ -401,7 +321,7 @@
       <workItem from="1551372203282" duration="3532000" />
       <workItem from="1552059571200" duration="2761000" />
       <workItem from="1552103884541" duration="52000" />
-      <workItem from="1553779548885" duration="24457000" />
+      <workItem from="1553779548885" duration="24648000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <created>1546945503119</created>
@@ -711,11 +631,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551268015989</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="setup">
+      <created>1553923492181</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1553923492181</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127442000" />
+    <option name="totallyTimeSpent" value="127633000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1203,10 +1130,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="50" column="60" lean-forward="false" selection-start-line="50" selection-start-column="60" selection-end-line="50" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="224" column="17" lean-forward="true" selection-start-line="207" selection-start-column="16" selection-end-line="224" selection-end-column="17" />
+        <state relative-caret-position="367">
+          <caret line="225" column="15" lean-forward="false" selection-start-line="225" selection-start-column="15" selection-end-line="225" selection-end-column="15" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1218,16 +1153,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/newProd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state relative-caret-position="325">
+          <caret line="109" column="7" lean-forward="false" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/newDetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="108" column="7" lean-forward="false" selection-start-line="108" selection-start-column="7" selection-end-line="108" selection-end-column="7" />
+        <state relative-caret-position="336">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1236,8 +1171,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aboutUs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="100" column="15" lean-forward="false" selection-start-line="100" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
+        <state relative-caret-position="318">
+          <caret line="101" column="15" lean-forward="false" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1261,16 +1196,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="101" column="23" lean-forward="true" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="50" column="60" lean-forward="false" selection-start-line="50" selection-start-column="60" selection-end-line="50" selection-end-column="60" />
+        <state relative-caret-position="441">
+          <caret line="108" column="15" lean-forward="false" selection-start-line="108" selection-start-column="15" selection-end-line="108" selection-end-column="15" />
           <folding />
         </state>
       </provider>

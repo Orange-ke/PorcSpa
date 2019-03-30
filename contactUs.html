@@ -107,12 +107,11 @@
                         }
                     });
 
-                    $('#a4').on('click tap',function(){
-                        swal("郵件","info@paktatasia.com");
-                    });
                 }
             });
-
+            $('#a4').on('click tap',function(){
+                swal("郵件","info@paktatasia.com");
+            });
             $("[data-openwindow]").click(function() {
                 var self = $(this);
                 var targetHref = JSON.parse(self.attr("data-openwindow"));
