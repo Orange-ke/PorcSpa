@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <title>新品上市</title>
-    <link href="css/mui.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/base.css" rel="stylesheet" />
-    <link href="css/threeD.css" rel="stylesheet" />
+    <link href="sweetalert/sweetalert.css" rel="stylesheet" />
     <style type="text/css">
         .mui-table-view-cell:after {height: 0;}
         aside ul li {border-bottom: 2px solid #FFA000; background: #212121; color: #fff; text-align: center;}
@@ -20,103 +20,95 @@
         .block-title{text-align: center;margin: 10px 0;}
         .mui-text-center{font-size: 14px;padding: 10px 0;}
     </style>
+
 </head>
 
 <body>
+
 <!-- 侧滑导航根容器 -->
-<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
-    <!-- 菜单容器 -->
-    <aside class="mui-off-canvas-right">
-        <div class="mui-scroll-wrapper">
-            <div class="mui-scroll">
-                <ul class="mui-table-view">
-                    <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html"}'>主頁</a></li>
-                    <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html"}'>關於我們</a></li>
-                    <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html"}'>聯繫我們</a></li>
-                </ul>
-            </div>
+<header class="" id="header">
+    <div class="inner">
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right background-black" aria-labelledby="dropdownMenu1">
+                <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html"}'>主頁</a></li>
+                <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html"}'>關於我們</a></li>
+                <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html"}'>聯繫我們</a></li>
+            </ul>
         </div>
-    </aside>
-    <!-- 主页面标题 -->
-    <header class="mui-bar mui-bar-nav" id="header" style="background: #212121;">
-        <a id="menu" class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" style="color: #FFA000;"></a>
-        <h1 class="mui-title" style="color: #ffffff;">
+        <h1 class="">
             <a id="bgImg" data-openwindow='{"url":"index.html"}'>
                 <span>百達亞洲實業有限公司</span>
                 <span>Pak Tak Asia Industrial Limited</span>
             </a>
         </h1>
-    </header>
-    <div class="mui-inner-wrap">
-        <!--&lt;!&ndash; 主页面标题 &ndash;&gt;-->
-        <!--<header class="mui-bar mui-bar-nav">-->
-        <!--<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>-->
-        <!--<h1 class="mui-title">标题</h1>-->
-        <!--</header>-->
-        <div class="mui-content mui-scroll-wrapper" style="bottom: 50px;top: 60px;">
-            <div class="mui-scroll" style="background: url('images/bg.jpg') repeat;">
-                <div class="mui-row newComing mui-bottom">
-                    <h4 class="block-title textBuff">新品上市</h4>
-                    <div class="newListCon">
+    </div>
+</header>
 
-                    </div>
-                </div>
+<div class="container">
+    <div class="clear minHeight">
+        <div class="mui-row newComing mui-bottom clear background">
+            <h4 class="block-title textBuff">新品上市</h4>
+            <div class="newListCon clear">
+
             </div>
         </div>
     </div>
 </div>
 
 <nav class="mui-bar mui-bar-tab " id="nav">
-    <a class="mui-tab-item" id="a1" data-openwindow='{"url":"index.html"}'>
-        <span class="mui-icon mui-icon-home"></span>
-        <span class="mui-tab-label">主頁</span>
-    </a>
-    <a class="mui-tab-item mui-active" id="a5">
-        <span class="mui-icon mui-icon-flag"></span>
-        <span class="mui-tab-label">新品</span>
-    </a>
-    <a class="mui-tab-item " id="a3" href="tel:+852 3107 1628">
-        <span class="mui-icon mui-icon-phone"></span>
-        <span class="mui-tab-label">電話</span>
-    </a>
-    <a class="mui-tab-item " id="a4" href="mailto:info@paktatasia.com?subject=邮件标题&body=邮件内容">
-        <span class="mui-icon mui-icon-email"></span>
-        <span class="mui-tab-label">郵件</span>
-    </a>
-    <a class="mui-tab-item " id="a2" data-openwindow='{"url":"contactUs.html"}'>
-        <span class="mui-icon mui-icon-location"></span>
-        <span class="mui-tab-label">地址</span>
-    </a>
+    <div class="row">
+        <a class="mui-tab-item float-left" id="a1" data-openwindow='{"url":"index.html"}'>
+            <span class="glyphicon glyphicon-home"></span>
+            <span class="mui-tab-label">主頁</span>
+        </a>
+        <a class="mui-tab-item active float-left" id="a5">
+            <span class="glyphicon glyphicon-tags"></span>
+            <span class="mui-tab-label">新品</span>
+        </a>
+        <a class="mui-tab-item float-left" id="a3" href="tel:+852 3107 1628">
+            <span class="glyphicon glyphicon-phone-alt"></span>
+            <span class="mui-tab-label">電話</span>
+        </a>
+        <a class="mui-tab-item float-left" data-dismiss="alert" id="a4" href="mailto:info@paktatasia.com?subject=邮件标题&body=邮件内容">
+            <span class="glyphicon glyphicon-envelope"></span>
+            <span class="mui-tab-label">郵件</span>
+        </a>
+        <a class="mui-tab-item float-right" id="a2" data-openwindow='{"url":"https://www.google.com/maps/dir/22.3175899,114.2212058/%E7%99%BE%E9%81%94%E4%BA%9E%E6%B4%B2%E5%AF%A6%E6%A5%AD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@22.3154081,114.2186522,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3404014f78260567:0x1263351de240405a!2m2!1d114.2240101!2d22.3122975"}'>
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span class="mui-tab-label">地址</span>
+        </a>
+    </div>
 </nav>
 
-<div class="newItem_clone" hidden>
-    <div class="imgBg"></div>
+<div hidden>
+    <div class="newItem_clone pointer">
+        <div class="imgBg"></div>
+    </div>
 </div>
 
-<script src="js/mui.js"></script>
-<script src="js/util.js"></script>
-<script src="js/main.js"></script>
 <script src="js/jquery-3.2.1.js"></script>
-<script src="js/js.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="sweetalert/sweetalert.min.js"></script>
 <script type="text/javascript" charset="utf-8">
-    mui.init();
-    mui('.mui-slider').slider({
-        interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
-    });
-    mui('.mui-scroll-wrapper').scroll();
+    $(document).ready(function () {
+        if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
-    document.querySelector('#menu').addEventListener('tap',function () {
-        mui('.mui-off-canvas-wrap').offCanvas('show');
-    });
+        } else {
+            $('#a3').on('click tap',function(){
+                if(1) {
+                    swal("電話","tel:+852 3107 1628");
+                }
+            });
 
-    mui('body').on('tap','#a3',function(){
-        window.top.location.href=this.href;
+            $('#a4').on('click tap',function(){
+                swal("郵件","info@paktatasia.com");
+            });
+        }
     });
-
-    mui('#nav').on('tap','#a4',function(){
-        mui.alert('info@paktatasia.com','郵箱','我知道了',null,'div');
-    });
-
     $.getJSON( "json/newList.json", function( data ) {
         var imgData = data.imgList;
         var n = imgData.length;
@@ -130,7 +122,16 @@
             }).attr("data-openwindow",'{"url":"newDetail.html?newId=' + imgData[i].newId + '"}');
             $(".newListCon").append(newItemCon);
         }
-        $(".newListCon .newItem").show();
+        $(".newItem").each(function(i,e) {
+            var self = $(e);
+            self.css("height", self.width())
+        });
+
+        $("[data-openwindow]").click(function() {
+            var self = $(this);
+            var targetHref = JSON.parse(self.attr("data-openwindow"));
+            window.location.href = targetHref.url;
+        });
     });
 
 </script>

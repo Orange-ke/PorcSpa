@@ -4,285 +4,233 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>首頁</title>
-		<link href="css/mui.css" rel="stylesheet" />
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/base.css" rel="stylesheet" />
+        <link href="sweetalert/sweetalert.css" rel="stylesheet" />
 		<style type="text/css">
             aside ul li {border-bottom: 2px solid #FFA000; background: #212121; color: #fff; text-align: center;}
-            .specialList ul li .mui-card {box-shadow: 1px 3px 3px #212121; background: #212121; color: #fff;}
-            .shortInfoCon {padding-bottom: 10px;}
-            .shortInfo p, .textBuff {padding: 0 10px; text-shadow: 1px 1px 0 rgba(255, 255, 255, .7); font-size: 100%; color: #000;text-align: center; }
-            .mui-table-view-cell:after {height: 0;}
-			.mui-bar-transparent input{background: rgba(220,220,220,0.7);}
-			.mui-slider .mui-slider-group .mui-slider-item{max-height: 66.5vw;height: 66.5vw;}
-			.mui-slider .mui-slider-group .mui-slider-item img{height: 100%;}
-			.mui-grid-view.mui-grid-9 .mui-table-view-cell{padding: 0;font-size: 12px;border-color: #DBDBDB;}
-			.mui-ios .mui-grid-view.mui-grid-9 .mui-table-view-cell{border-width: 0.5px;}
-			.mui-grid-view.mui-grid-9 .mui-table-view-cell span{color: #FE3C3D;font-weight: bold;}
-			
-			.block-title{text-align: center; padding: 10px 0 10px 0; width: 90%; margin: 15px auto;}
-			.mui-text-center{font-size: 14px;padding: 10px 0;}
-            .mui-top {border-top: 1px solid #212121; border-radius: 10px 10px; padding-top: 10px;}
-            .mui-bottom {border-bottom: 1px solid #212121; border-radius: 10px 10px;}
+            .specialList ul li .mui-card {color: #000;}
 		</style>
 	</head>
-
     <body>
 
         <!-- 侧滑导航根容器 -->
-
-        <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
-            <!-- 菜单容器 -->
-            <aside class="mui-off-canvas-right">
-                <div class="mui-scroll-wrapper">
-                    <div class="mui-scroll">
-                        <ul class="mui-table-view">
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html"}'>主頁</a></li>
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html"}'>關於我們</a></li>
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html"}'>聯繫我們</a></li>
-                        </ul>
-                    </div>
+        <header class="" id="header">
+            <div class="inner">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right background-black" aria-labelledby="dropdownMenu1">
+                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html"}'>主頁</a></li>
+                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html"}'>關於我們</a></li>
+                        <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html"}'>聯繫我們</a></li>
+                    </ul>
                 </div>
-            </aside>
-            <!-- 主页面标题 -->
-            <header class="mui-bar mui-bar-nav" id="header" style="background: #212121;">
-                <a id="menu" class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" style="color: #FFA000;"></a>
-                <h1 class="mui-title" style="color: #ffffff;">
+                <h1 class="">
                     <a id="bgImg" data-openwindow='{"url":"index.html"}'>
                         <span>百達亞洲實業有限公司</span>
                         <span>Pak Tak Asia Industrial Limited</span>
                     </a>
                 </h1>
-            </header>
-            <div class="mui-inner-wrap">
-                <!--&lt;!&ndash; 主页面标题 &ndash;&gt;-->
-                <!--<header class="mui-bar mui-bar-nav">-->
-                    <!--<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>-->
-                    <!--<h1 class="mui-title">标题</h1>-->
-                <!--</header>-->
-                <div class="mui-content mui-scroll-wrapper" style="bottom: 50px;top: 60px;">
-                    <div class="mui-scroll" style="background: url('images/bg.jpg') repeat;">
-                        <!-- 主界面具体展示内容 -->
-                        <div class="mui-slider">
-                            <div class="mui-slider-group mui-slider-loop">
-                                <div class="mui-slider-item mui-slider-item-duplicate"><img src="images/10.jpg" /></div>
-                                <div class="mui-slider-item"><img src="images/1.jpg" /></div>
-                                <div class="mui-slider-item"><img src="images/2.jpg" /></div>
-                                <div class="mui-slider-item"><img src="images/3.jpg" /></div>
-                                <div class="mui-slider-item"><img src="images/4.jpg" /></div>
-                                <div class="mui-slider-item"><img src="images/5.jpg" /></div>
-                                <div class="mui-slider-item"><img src="images/6.jpg" /></div>
-                                <div class="mui-slider-item"><img src="images/7.jpg" /></div>
-                                <div class="mui-slider-item"><img src="images/8.jpg" /></div>
-                                <div class="mui-slider-item"><img src="images/9.jpg" /></div>
-                                <div class="mui-slider-item"><img src="images/10.jpg" /></div>
-                                <div class="mui-slider-item mui-slider-item-duplicate"><img src="images/1.jpg" /></div>
+            </div>
+        </header>
+        <div class="container">
+            <!-- 主页面标题 -->
+            <div class="minHeight">
+                <!-- 主界面具体展示内容 -->
+                <div class="carouselContainer background" style="margin-top: 0;">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/1.jpg" alt="1">
                             </div>
-                            <div class="mui-slider-indicator">
-                                <div class="mui-indicator mui-active"></div>
-                                <div class="mui-indicator"></div>
-                                <div class="mui-indicator"></div>
-                                <div class="mui-indicator"></div>
-                                <div class="mui-indicator"></div>
-                                <div class="mui-indicator"></div>
-                                <div class="mui-indicator"></div>
-                                <div class="mui-indicator"></div>
-                                <div class="mui-indicator"></div>
-                                <div class="mui-indicator"></div>
+                            <div class="item">
+                                <img src="images/2.jpg" alt="2">
+                            </div>
+                            <div class="item">
+                                <img src="images/3.jpg" alt="3">
+                            </div>
+                            <div class="item">
+                                <img src="images/4.jpg" alt="4">
+                            </div>
+                            <div class="item">
+                                <img src="images/5.jpg" alt="5">
+                            </div>
+                            <div class="item">
+                                <img src="images/6.jpg" alt="6">
+                            </div>
+                            <div class="item">
+                                <img src="images/7.jpg" alt="7">
+                            </div>
+                            <div class="item">
+                                <img src="images/8.jpg" alt="8">
+                            </div>
+                            <div class="item">
+                                <img src="images/9.jpg" alt="9">
+                            </div>
+                            <div class="item">
+                                <img src="images/10.jpg" alt="10">
                             </div>
                         </div>
+    
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
 
-                        <div class="special border-bottom">
-                            <div class="shortInfoCon mui-bottom">
-                                <h4 class="textBuff block-title">百達亞洲</h4>
-                                <div class="shortInfo mui-top">
-                                    <p>百達亞洲成立於2010年，主營餐具批發及提供餐飲設計，致力為香港各大酒店、酒樓、餐廳及連鎖食肆提供傢俬。</p>
-                                    <p>位於觀塘的展廳佔地5,000尺，設有3萬多個品種的傢俬，選購空間寬敞舒適，可令顧客自由搭配構思佳餚。</p>
+                <div class="special border-bottom background">
+                    <div class="specialList mui-bottom">
+                        <h4 class="block-title textBuff text-left">產品類別</h4>
+                        <ul id="list" class="row clear" style="background: transparent;">
+                            <li class="mui-table-view-cell col-sm-4 pointer" data-openwindow='{"url":"product.html?specialId=1"}'>
+                                <div class="mui-card">
+                                    <!--内容区-->
+                                    <div class="mui-card-content">
+                                        <img class="img-circle" src="images/sp1.jpg" alt width="100%">
+                                    </div>
+                                    <div class="mui-card-footer">
+                                        <p>純白色陶瓷系列</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="mui-row specialList mui-bottom">
-                                <h4 class="block-title textBuff">產品類別</h4>
-                                <ul id="list" class="mui-table-view mui-top" style="background: transparent;">
-                                    <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=1"}'>
-                                        <div class="mui-card">
-                                            <!--页眉，放置标题-->
-                                            <div class="mui-card-header">
-                                                <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
-                                                <span>純白色陶瓷系列</span>
-                                            </div>
-                                            <!--内容区-->
-                                            <div class="mui-card-content">
-                                                <img src="images/sp1.jpg" alt width="100%">
-                                            </div>
-                                            <div class="mui-card-footer">
-                                                <p>骨瓷、骨质瓷、鎂質強化瓷</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=2"}'>
-                                        <div class="mui-card">
-                                            <!--页眉，放置标题-->
-                                            <div class="mui-card-header">
-                                                <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
-                                                <span>日式陶瓷系列</span>
-                                            </div>
-                                            <!--内容区-->
-                                            <div class="mui-card-content">
-                                                <img src="images/sp2.jpg" alt width="100%">
-                                            </div>
-                                            <div class="mui-card-footer">
-                                                <p>有田燒、美濃燒、波佐見燒</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=3"}'>
-                                        <div class="mui-card">
-                                            <!--页眉，放置标题-->
-                                            <div class="mui-card-header">
-                                                <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
-                                                <span>中式陶瓷系列</span>
-                                            </div>
-                                            <!--内容区-->
-                                            <div class="mui-card-content">
-                                                <img src="images/sp3.jpg" alt width="100%">
-                                            </div>
-                                            <div class="mui-card-footer">
-                                                <p>公雞、纏枝蓮紋、西湖美景</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=4"}'>
-                                        <div class="mui-card">
-                                            <!--页眉，放置标题-->
-                                            <div class="mui-card-header">
-                                                <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
-                                                <span>科學瓷系列</span>
-                                            </div>
-                                            <!--内容区-->
-                                            <div class="mui-card-content">
-                                                <img src="images/sp4.jpg" alt width="100%">
-                                            </div>
-                                            <div class="mui-card-footer">
-                                                <p>白色科學瓷、黑色科學瓷、色釉科學瓷</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=5"}'>
-                                        <div class="mui-card">
-                                            <!--页眉，放置标题-->
-                                            <div class="mui-card-header">
-                                                <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
-                                                <span>玻璃器皿系列</span>
-                                            </div>
-                                            <!--内容区-->
-                                            <div class="mui-card-content">
-                                                <img src="images/sp5.jpg" alt width="100%">
-                                            </div>
-                                            <div class="mui-card-footer">
-                                                <p>Arcoroc、Lucaris、Ocean、Libbey、Bormioli、Pasabahce、Riedel</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=6"}'>
-                                        <div class="mui-card">
-                                            <!--页眉，放置标题-->
-                                            <div class="mui-card-header">
-                                                <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
-                                                <span>不鏽鋼器皿系列</span>
-                                            </div>
-                                            <!--内容区-->
-                                            <div class="mui-card-content">
-                                                <img src="images/sp6.jpg" alt width="100%">
-                                            </div>
-                                            <div class="mui-card-footer">
-                                                <p>自助餐爐、自助餐保溫燈、食物點心展示架</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="mui-table-view-cell" data-openwindow='{"url":"product.html?specialId=7"}'>
-                                        <div class="mui-card">
-                                            <!--页眉，放置标题-->
-                                            <div class="mui-card-header">
-                                                <span class="mui-icon mui-action-menu mui-icon-star mui-pull-left" style="color: #FFA000;"></span>
-                                                <span>雜項</span>
-                                            </div>
-                                            <!--内容区-->
-                                            <div class="mui-card-content">
-                                                <img src="images/sp7.jpg" alt width="100%">
-                                            </div>
-                                            <div class="mui-card-footer">
-                                                <p>廚師服、轉盤、下欄盤、餐車、杯框、凳子、餐墊、圾桶、等等</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="mui-text-center"><p>查看更多信息請移步PC端登陸 <a target="_blank" data-openwindow='{"url":"http://www.paktatasia.com"}'> www.paktatasia.com</a></p></div>
-                        </div>
+                            </li>
+                            <li class="mui-table-view-cell col-sm-4 pointer" data-openwindow='{"url":"product.html?specialId=2"}'>
+                                <div class="mui-card">
 
+                                    <!--内容区-->
+                                    <div class="mui-card-content">
+                                        <img class="img-circle"  src="images/sp2.jpg" alt width="100%">
+                                    </div>
+                                    <div class="mui-card-footer">
+                                        <p>日式陶瓷系列</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="mui-table-view-cell col-sm-4 pointer" data-openwindow='{"url":"product.html?specialId=3"}'>
+                                <div class="mui-card">
+                                    <!--内容区-->
+                                    <div class="mui-card-content">
+                                        <img class="img-circle"  src="images/sp3.jpg" alt width="100%">
+                                    </div>
+                                    <div class="mui-card-footer">
+                                        <p>科學瓷系列</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mui-table-view-cell col-sm-4 pointer" data-openwindow='{"url":"product.html?specialId=4"}'>
+                                <div class="mui-card">
+                                    <!--内容区-->
+                                    <div class="mui-card-content">
+                                        <img class="img-circle"  src="images/sp4.jpg" alt width="100%">
+                                    </div>
+                                    <div class="mui-card-footer">
+                                        <p>玻璃器皿系列</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="mui-table-view-cell col-sm-4 pointer" data-openwindow='{"url":"product.html?specialId=5"}'>
+                                <div class="mui-card">
+                                    <!--内容区-->
+                                    <div class="mui-card-content">
+                                        <img class="img-circle"  src="images/sp5.jpg" alt width="100%">
+                                    </div>
+                                    <div class="mui-card-footer">
+                                        <p>雜項</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="new background" style="margin-bottom: 20px;">
+                    <div style="position: relative;" class="clear">
+                        <a href="newProd.html" class="block-title textBuff text-left">新品</a>
+                        <span class="glyphicon glyphicon-chevron-right position-right"></span>
                     </div>
                 </div>
             </div>
         </div>
 
         <nav class="mui-bar mui-bar-tab " id="nav">
-            <a class="mui-tab-item mui-active" id="a1">
-                <span class="mui-icon mui-icon-home"></span>
-                <span class="mui-tab-label">主頁</span>
-            </a>
-            <a class="mui-tab-item " id="a5" data-openwindow='{"url":"newProd.html"}'>
-                <span class="mui-icon mui-icon-flag"></span>
-                <span class="mui-tab-label">新品</span>
-            </a>
-            <a class="mui-tab-item " id="a3" href="tel:+852 3107 1628">
-                <span class="mui-icon mui-icon-phone"></span>
-                <span class="mui-tab-label">電話</span>
-            </a>
-			<a class="mui-tab-item " id="a4" href="mailto:info@paktatasia.com?subject=邮件标题&body=邮件内容">
-                <span class="mui-icon mui-icon-email"></span>
-                <span class="mui-tab-label">郵件</span>
-			</a>
-            <a class="mui-tab-item " id="a2" data-openwindow='{"url":"https://www.google.com/maps/dir/22.3175899,114.2212058/%E7%99%BE%E9%81%94%E4%BA%9E%E6%B4%B2%E5%AF%A6%E6%A5%AD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@22.3154081,114.2186522,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3404014f78260567:0x1263351de240405a!2m2!1d114.2240101!2d22.3122975"}'>
-                <span class="mui-icon mui-icon-location"></span>
-                <span class="mui-tab-label">地址</span>
-            </a>
+            <div class="row">
+                <a class="mui-tab-item active float-left" id="a1">
+                    <span class="glyphicon glyphicon-home"></span>
+                    <span class="mui-tab-label">主頁</span>
+                </a>
+                <a class="mui-tab-item float-left" id="a5" data-openwindow='{"url":"newProd.html"}'>
+                    <span class="glyphicon glyphicon-tags"></span>
+                    <span class="mui-tab-label">新品</span>
+                </a>
+                <a class="mui-tab-item float-left" id="a3" href="tel:+852 3107 1628">
+                    <span class="glyphicon glyphicon-phone-alt"></span>
+                    <span class="mui-tab-label">電話</span>
+                </a>
+                <a class="mui-tab-item float-left" data-dismiss="alert" id="a4" href="mailto:info@paktatasia.com?subject=邮件标题&body=邮件内容">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    <span class="mui-tab-label">郵件</span>
+                </a>
+                <a class="mui-tab-item float-right" id="a2" data-openwindow='{"url":"https://www.google.com/maps/dir/22.3175899,114.2212058/%E7%99%BE%E9%81%94%E4%BA%9E%E6%B4%B2%E5%AF%A6%E6%A5%AD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@22.3154081,114.2186522,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3404014f78260567:0x1263351de240405a!2m2!1d114.2240101!2d22.3122975"}'>
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span class="mui-tab-label">地址</span>
+                </a>
+            </div>
         </nav>
-
-		<script src="js/mui.js"></script>
-		<script src="js/util.js"></script>
+        <script src="js/jquery-3.2.1.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="sweetalert/sweetalert.min.js"></script>
 		<script type="text/javascript" charset="utf-8">
-			mui.init();
-            mui('.mui-slider').slider({
-                interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
+            $(document).ready(function() {
+                if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+
+                } else {
+                    var innerWidth = $(".carousel-inner").width();
+                    var outerWidth = $(".carouselContainer").width();
+                    var adjustWudth = (outerWidth - innerWidth)/2;
+                    $(".left.carousel-control").css("left",-adjustWudth);
+                    $(".right.carousel-control").css("right",-adjustWudth);
+                    $('#a3').on('click tap',function(){
+                        if(1) {
+                            swal("電話","tel:+852 3107 1628");
+                        }
+                    });
+
+                    $('#a4').on('click tap',function(){
+                        swal("郵件","info@paktatasia.com");
+                    });
+                }
             });
-            mui('.mui-scroll-wrapper').scroll();
 
-            document.querySelector('#menu').addEventListener('tap',function () {
-                mui('.mui-off-canvas-wrap').offCanvas('show');
-            });
+            $("[data-openwindow]").click(function() {
+                var self = $(this);
+                var targetHref = JSON.parse(self.attr("data-openwindow"));
+                window.location.href = targetHref.url;
+            })
 
-            mui('#nav').on('tap','#a3',function(){
-                window.top.location.href=this.href;
-            });
-
-            mui('#nav').on('tap','#a4',function(){
-                mui.alert('info@paktatasia.com','郵箱','我知道了',null,'div');
-            });
-
-
-
-//            var lazyLoad = mui('#list').imageLazyload({
-//                placeholder: '../images/60x60.gif',
-//                autoDestroy: false
-//            });
-
-
-
-//			mui.plusReady(function() {
-//				var tabBarControl = new TabBarControl();
-//				mui('.mui-scroll-wrapper').scroll();
-//				mui('.mui-slider').slider({interval:3000});
-//			});
 		</script>
 	</body>
 

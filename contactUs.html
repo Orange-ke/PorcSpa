@@ -5,133 +5,120 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>聯繫我們</title>
-		<link href="css/mui.css" rel="stylesheet" />
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/base.css" rel="stylesheet" />
+        <link href="sweetalert/sweetalert.css" rel="stylesheet" />
 		<style type="text/css">
             .mui-table-view-cell:after {height: 0;}
             aside ul li {border-bottom: 2px solid #FFA000; background: #212121; color: #fff; text-align: center;}
             .contactDetail ul li p {padding: 0 10px; text-shadow: 1px 1px 0 rgba(255, 255, 255, .7); font-size: 100%; color: #000;text-indent: 35px; text-align: justify; }
-			.mui-bar-transparent input{background: rgba(220,220,220,0.7);}
-			.mui-slider .mui-slider-group .mui-slider-item img{height: 100%;}
-			.mui-grid-view.mui-grid-9 .mui-table-view-cell{padding: 0;font-size: 12px;border-color: #DBDBDB;}
-			.mui-ios .mui-grid-view.mui-grid-9 .mui-table-view-cell{border-width: 0.5px;}
-			.mui-grid-view.mui-grid-9 .mui-table-view-cell span{color: #FE3C3D;font-weight: bold;}
-			
-			.block-title{text-align: center;margin: 10px 0;}
-			.mui-row,.mui-row > div{padding: 0 5px;}
-			.recommend .mui-col-xs-6 img{width: 100%;height: 100%;position: absolute;top: 0px;}
-			.recommend .mui-col-xs-6 h6{margin: 8px 0;text-align: center;}
-			.mechanism .mui-col-xs-4 img{width: 100%;height: 100%;position: absolute;top: 0px;}
-            .mui-text-center{font-size: 14px;padding: 10px 0;}
 		</style>
 	</head>
 
     <body>
-
-        <!-- 侧滑导航根容器 -->
-
-        <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
-            <!-- 菜单容器 -->
-            <aside class="mui-off-canvas-right">
-                <div class="mui-scroll-wrapper">
-                    <div class="mui-scroll">
-                        <ul class="mui-table-view">
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html"}'>主頁</a></li>
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html"}'>關於我們</a></li>
-                            <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html"}'>聯繫我們</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </aside>
-            <!-- 主页面标题 -->
-            <header class="mui-bar mui-bar-nav" id="header" style="background: #212121;">
-                <a id="menu" class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" style="color: #FFA000;"></a>
-                <h1 class="mui-title" style="color: #ffffff;">
-                    <a id="bgImg" data-openwindow='{"url":"index.html"}'>
-                        <span>百達亞洲實業有限公司</span>
-                        <span>Pak Tak Asia Industrial Limited</span>
-                    </a>
-                </h1>
-            </header>
-            <div class="mui-inner-wrap">
-                <div class="mui-content mui-scroll-wrapper" style="bottom: 50px;top: 60px;">
-                    <div class="mui-scroll" style="background: url('images/bg.jpg') repeat;">
-                        <!-- 主界面具体展示内容 -->
-                        <div class="contactInfo border-bottom">
-                            <h4 class="font-normal block-title" style="margin-top: 15px; background: rgba(0,0,0,.3);padding: 10px 0 10px 0">聯繫我們</h4>
-                            <div class="contactDetail">
-                                <ul class="mui-table-view">
-                                    <li class="mui-table-view-cell" style="font-size: 100%">
-                                        <h4 class="font-normal border-bottom" style="margin-top: 15px;">地址</h4>
-                                        <iframe src="http://www.google.cn/maps/embed?pb=!1m18!1m12!1m3!1d59057.49512230058!2d114.18900728102155!3d22.312305447283126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404014f782605b7%3A0x1cac67505c0bab44!2z6aaZ5riv6KeA5aGY5ben5piO6KGXMTA16Jmf5aW96L-Q5bel5Lia5aSn5Y6m!5e0!3m2!1szh-CN!2scn!4v1531564432605" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                    </li>
-                                    <li class="mui-table-view-cell">
-                                        <h4 class="font-normal border-bottom" style="margin-top: 15px;">電話</h4>
-                                        <p><a  href="tel:+852 3107 1628">+852 3107 1628</a></p>
-                                        <p><a  href="tel:+852 9150 8399">+852 9150 8399</a></p>
-                                        <p><a  href="tel:+852 9869 3253">+852 9869 3253</a></p>
-                                    </li>
-                                    <li class="mui-table-view-cell" style="font-size: 100%">
-                                        <h4 class="font-normal border-bottom" style="margin-top: 15px;">傳真</h4>
-                                        <p>+852 2156 1928</p>
-                                    </li>
-                                    <li class="mui-table-view-cell" style="font-size: 100%">
-                                        <h4 class="font-normal border-bottom" style="margin-top: 15px;">郵箱</h4>
-                                        <p><a href=''>info@paktatasia.com</a></p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mui-text-center"><p>公司網址請移步PC端<a target="_blank" data-openwindow='{"url":"http://www.paktatasia.com"}'> www.paktatasia.com</a></p></div>
-                    </div>
+    <!-- 侧滑导航根容器 -->
+    <header class="" id="header">
+        <div class="inner">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right background-black" aria-labelledby="dropdownMenu1">
+                    <li class="mui-table-view-cell"><a data-openwindow='{"url":"index.html"}'>主頁</a></li>
+                    <li class="mui-table-view-cell"><a data-openwindow='{"url":"aboutUs.html"}'>關於我們</a></li>
+                    <li class="mui-table-view-cell"><a data-openwindow='{"url":"contactUs.html"}'>聯繫我們</a></li>
+                </ul>
+            </div>
+            <h1 class="">
+                <a id="bgImg" data-openwindow='{"url":"index.html"}'>
+                    <span>百達亞洲實業有限公司</span>
+                    <span>Pak Tak Asia Industrial Limited</span>
+                </a>
+            </h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="minHeight">
+            <!-- 主界面具体展示内容 -->
+            <div class="contactInfo border-bottom background">
+                <h4 class="font-normal block-title">聯繫我們</h4>
+                <div class="contactDetail">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell" style="font-size: 100%">
+                            <h4 class="font-normal border-bottom" style="margin-top: 15px;">地址</h4>
+                            <iframe src="http://www.google.cn/maps/embed?pb=!1m18!1m12!1m3!1d59057.49512230058!2d114.18900728102155!3d22.312305447283126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404014f782605b7%3A0x1cac67505c0bab44!2z6aaZ5riv6KeA5aGY5ben5piO6KGXMTA16Jmf5aW96L-Q5bel5Lia5aSn5Y6m!5e0!3m2!1szh-CN!2scn!4v1531564432605" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </li>
+                        <li class="mui-table-view-cell">
+                            <h4 class="font-normal border-bottom" style="margin-top: 15px;">電話</h4>
+                            <p><a  href="tel:+852 3107 1628">+852 3107 1628</a></p>
+                            <p><a  href="tel:+852 9150 8399">+852 9150 8399</a></p>
+                            <p><a  href="tel:+852 9869 3253">+852 9869 3253</a></p>
+                        </li>
+                        <li class="mui-table-view-cell" style="font-size: 100%">
+                            <h4 class="font-normal border-bottom" style="margin-top: 15px;">傳真</h4>
+                            <p>+852 2156 1928</p>
+                        </li>
+                        <li class="mui-table-view-cell" style="font-size: 100%">
+                            <h4 class="font-normal border-bottom" style="margin-top: 15px;">郵箱</h4>
+                            <p><a href=''>info@paktatasia.com</a></p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-
+    </div>
         <nav class="mui-bar mui-bar-tab " id="nav">
-            <a class="mui-tab-item" id="a1" data-openwindow='{"url":"index.html"}'>
-                <span class="mui-icon mui-icon-home"></span>
-                <span class="mui-tab-label">主頁</span>
-            </a>
-            <a class="mui-tab-item " id="a5" data-openwindow='{"url":"newProd.html"}'>
-                <span class="mui-icon mui-icon-flag"></span>
-                <span class="mui-tab-label">新品</span>
-            </a>
-            <a class="mui-tab-item" id="a3" href="tel:+852 3107 1628">
-                <span class="mui-icon mui-icon-phone"></span>
-                <span class="mui-tab-label">電話</span>
-            </a>
-			<a class="mui-tab-item" href="mailto:info@paktatasia.com?subject=邮件标题&body=邮件内容" id="a4">
-				<span class="mui-icon mui-icon-email"></span>
-				<span class="mui-tab-label">郵件</span>
-			</a>
-            <a class="mui-tab-item mui-active" id="a2">
-                <span class="mui-icon mui-icon-location"></span>
-                <span class="mui-tab-label">地址</span>
-            </a>
+            <div class="row">
+                <a class="mui-tab-item float-left" id="a1" data-openwindow='{"url":"index.html"}'>
+                    <span class="glyphicon glyphicon-home"></span>
+                    <span class="mui-tab-label">主頁</span>
+                </a>
+                <a class="mui-tab-item float-left" id="a5" data-openwindow='{"url":"newProd.html"}'>
+                    <span class="glyphicon glyphicon-tags"></span>
+                    <span class="mui-tab-label">新品</span>
+                </a>
+                <a class="mui-tab-item float-left" id="a3" href="tel:+852 3107 1628">
+                    <span class="glyphicon glyphicon-phone-alt"></span>
+                    <span class="mui-tab-label">電話</span>
+                </a>
+                <a class="mui-tab-item float-left" data-dismiss="alert" id="a4" href="">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    <span class="mui-tab-label">郵件</span>
+                </a>
+                <a class="mui-tab-item float-right" id="a2" data-openwindow='{"url":"https://www.google.com/maps/dir/22.3175899,114.2212058/%E7%99%BE%E9%81%94%E4%BA%9E%E6%B4%B2%E5%AF%A6%E6%A5%AD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@22.3154081,114.2186522,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3404014f78260567:0x1263351de240405a!2m2!1d114.2240101!2d22.3122975"}'>
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span class="mui-tab-label">地址</span>
+                </a>
+            </div>
         </nav>
 
-		<script src="js/mui.js"></script>
-		<script src="js/util.js"></script>
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
-		<script type="text/javascript" charset="utf-8">
-			mui.init();
-            mui('.mui-slider').slider({
-                interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
-            });
-            mui('.mui-scroll-wrapper').scroll();
-            
-            document.querySelector('#menu').addEventListener('tap',function () {
-                mui('.mui-off-canvas-wrap').offCanvas('show');
+        <script src="sweetalert/sweetalert.min.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(document).ready(function () {
+                if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+
+                } else {
+                    $('#a3').on('click tap',function(){
+                        if(1) {
+                            swal("電話","tel:+852 3107 1628");
+                        }
+                    });
+
+                    $('#a4').on('click tap',function(){
+                        swal("郵件","info@paktatasia.com");
+                    });
+                }
             });
 
-            mui('#nav').on('tap','#a3',function(){
-                window.top.location.href=this.href;
-            });
-
-            mui('#nav').on('tap','#a4',function(){
-                mui.alert('info@paktatasia.com','郵箱','我知道了',null,'div');
-            });
+            $("[data-openwindow]").click(function() {
+                var self = $(this);
+                var targetHref = JSON.parse(self.attr("data-openwindow"));
+                console.log(targetHref);
+                window.location.href = targetHref.url;
+            })
 
 //			mui.plusReady(function() {
 //				var tabBarControl = new TabBarControl();

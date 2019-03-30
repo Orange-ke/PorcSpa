@@ -1,11 +1,10 @@
 {
 	"imgList":
-	{
-		"imgFront": "img/4/1.jpg",
-		"imgBack": "img/4/2.jpg",
-		"imgTop": "img/4/3.jpg",
-		"imgLeft": "img/4/4.jpg",
-		"imgRight": "img/4/5.jpg",
-		"imgBottom": "img/4/6.jpg"
-	}
+	[
+		"img/newDetail/n1_1.jpg",
+		"img/newDetail/n1_2.jpg",
+		"img/newDetail/n1_3.jpg",
+		"img/newDetail/n1_4.jpg",
+		"img/newDetail/n1_5.jpg"
+	]
 }
