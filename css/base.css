@@ -125,6 +125,7 @@ header span {line-height: 27px; font-size:25px; display: inline-block; margin-to
 
 
 @media screen and (max-width: 768px) {
+    body {overflow-x: hidden;}
     .container {width: 100%; padding-left: 0;padding-right: 0;}
     header .inner {width: 100%;}
     #nav div {width: 100%;}
