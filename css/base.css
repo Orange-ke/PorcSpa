@@ -69,7 +69,7 @@ header span {line-height: 27px; font-size:25px; display: inline-block; margin-to
 #header {box-shadow: 1px 3px 3px #212121; height: 55px; background: #212121;}
 #bgImg {display: inline-block; position: relative; height: 55px; width: 100%; background: url('../images/header.jpg') no-repeat;background-size: contain; background-position: 8% 50%; font-size: 100%; color: #fff; }
 #bgImg span { display: inline-block; position: absolute; left: 19%;}
-#bgImg span:nth-child(2) { top: 18px; }
+#bgImg span:nth-child(2) { top: 25px; }
 .mui-slider .mui-slider-group .mui-slider-item{max-height: 66.5vw;height: 66.5vw;}
 #newScroll {
     height: 400px;
